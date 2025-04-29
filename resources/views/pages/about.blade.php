@@ -1,246 +1,258 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        @vite('resources/css/app.css')
-        <title>Laravel</title>
-        <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.css">
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=Roboto:400,500,600&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.bunny.net/css?family=Merriweather:400,500,600&display=swap" rel="stylesheet"/>
-        {{-- <style>
-            p{
-                color: #c892f2;
-            }
-        </style> --}}
-    </head>
-    <body class="p-0 m-0 list-none">
-        {{-- HEADER/NAV BAR --}}
-        <section class="text-white w-full h-auto bg-cover bg-center bg-blue-200" style="background-image: linear-gradient(to right,rgba(175, 111, 238, 0.199),hsla(266, 89%, 11%, 0.944)),url('./images/KANYASI_63.jpg')">
-            <nav class="mx-0 px-6 py-2 lg:text-inherit flex justify-between lg:py-6 lg:mx-banner lg:flex lg:justify-between lg:gap-6 items-center">
-                <div class="h-10 w-1/4  lg:h-16 lg:w-1/5 bg-cover bg-center" style="background-image: url('./images/SIDE-01.png')">
+@extends('layouts.guest-layout')
+@section('content')
+    <div class="w-full overflow-hidden bg-no-repeat bg-center bg-cover"
+        style="background-image: url('{{ asset('images/sample-bg.jpg') }}')">
+        <div class="w-full">
+            <div class="w-11/12 md:w-3/5 mx-auto">
+                <div class="my-8 text-center">
+                    <h2 class="text-xl font-heading font-semibold tracking-wider text-blue-900 uppercase">
+                        About Sesware Nexus
+                    </h2>
+                    <p class="text-2xl my-2 text-gray-700">Your Partner in Digital Transformation</p>
+                    <p class="text-lg text-gray-600 mt-4">Sesware Nexus is a dynamic team of software developers and graphic
+                        designers dedicated to empowering businesses in Tanzania with cutting-edge technology and creative
+                        solutions.</p>
+                    <p class="text-lg text-gray-600 mt-4">Founded in 2024, we combine technical expertise with a passion for
+                        design to deliver tailored software applications and impactful brand experiences that drive real
+                        results.</p>
+                    <p class="text-lg text-gray-600 mt-4">We understand the unique challenges and opportunities of the
+                        Tanzanian market, and we're committed to helping businesses thrive in the digital age.</p>
                 </div>
-                <div class="lg:flex lg:justify-between lg:w-2/5 font-heading hidden">
-                    <a href="{{route('home')}}">
-                        <li>Home</li>
-                    </a>
 
-                    <a href="{{route('about')}}">
-                        <li>About Us</li>
-                    </a>
-
-                    <a href="{{route('service')}}">
-                        <li>Services</li>
-                    </a>
-
-                    <a href="{{route('product')}}">
-                        <li>Products</li>
-                    </a>
-
-                    <a href="{{route('contact')}}">
-                        <li>Contact us</li>
+                <div class="w-fit mx-auto my-4 py-4 ">
+                    <a href="#">
+                        <button
+                            class="py-3 px-4 bg-blue-950 hover:bg-blue-900 rounded-full font-semibold text-xl transition-colors duration-1000 text-white">
+                            Explore Our Services
+                        </button>
                     </a>
                 </div>
-                <div class="lg:hidden text-white text-lg">
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-x" style="display: none"></i>
-                </div>
-            </nav>
-
-            <div class="flex flex-col gap-4 mx-4 mt-banner pb-10 lg:flex lg:flex-row lg:mx-banner lg:pl-10 lg:mt-banner lg:pb-14 items-center ">
-                <div class="flex flex-col gap-4 lg:w-4/5 text-center" style="margin: 5% auto">
-                    <h2 class="text-mobilehead lg:text-headimg font-headimg" data-aos="fade-up" data-aos-duration="3000">Innovative <span class="ss"> Tech Solutions </span> for a Smarter Furture.</h2>
-                    <h2><hr class="w-6 h-1 lg:w-8 lg:h-2 bg-white border-none" style="margin: 0 auto"></h2>
-                    <p class="text-md font-heading lg:block" data-aos="fade-up" data-aos-duration="3000">We create smart,scalable, and future-ready solutions that drive business success.We turn challenges into opportunities with cutting-edge technology.</p>
-                </div>
-                <div class="gap-4 lg:w-1/5 items-center" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="flex flex-row lg:flex-col gap-6 lg:w-fit lg:ml-auto text-lg text-white cursor-pointer">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-hd px-4 py-top lg:px-banner lg:py-top font-content">
-            <div class="grid grid-cols-2 gap-3 md:grid md:grid-cols-4 lg:grid lg:grid-cols-7 lg:gap-4">
-                <div class="flex gap-2 lg:gap-2 items-center">
-                    <div class="flex flex-col gap-2">
-                        <h1 class="text-xl lg:text-2xl font-semibold text-white">10+</h1>
-                        <h2 class="text-lg font-content text-slate-400">Projects</h2>
-                    </div>
-                </div>
-                <hr class="hidden lg:block lg:w-1 border-none lg:h-16 bg-slate-500 g:w-fit lg:ml-auto">
-                <div class="flex lg:gap-2 items-center">
-                    <div class="flex flex-col gap-2">
-                        <h1 class="text-xl lg:text-2xl font-semibold text-white">24/7</h1>
-                        <h2 class="text-lg font-content text-slate-400">Services</h2>
-                    </div>
-                </div>
-                <hr class="hidden lg:block lg:w-1 border-none lg:h-16 bg-slate-500 g:w-fit lg:ml-auto">
-                <div class="flex lg:gap-2 items-center">
-                    <div class="flex flex-col gap-2">
-                        <h1 class="text-xl lg:text-2xl font-semibold text-white">100 +</h1>
-                        <h2 class="text-lg font-content text-slate-400">Customers</h2>
-                    </div>
-                </div>
-                <hr class="hidden lg:block lg:w-1 border-none lg:h-16 bg-slate-500 g:w-fit lg:ml-auto">
-                <div class="flex lg:gap-2 items-center">
-                    <div class="flex flex-col gap-2">
-                        <h1 class="text-xl lg:text-2xl font-semibold text-white"> 3+</h1>
-                        <h2 class="text-lg font-content text-slate-400">Years Experience</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        {{-- ABOUT --}}
-
-        <section class="px-mob py-top lg:px-banner lg:py-top font-content flex flex-col gap-4">
-            <div class="flex flex-col gap-3 lg:flex lg:flex-row lg:gap-8 lg:item-center font-content">
-                <div class="flex flex-col gap-3 w-full lg:gap-3 lg:w-1/2">
-                    <h2 class="text-2xl lg:text-3xl font-headimg">Take your Business To The Next Level! </h2>
-                    <hr class="h-1 w-20 lg:h-1.5 lg:w-20 bg-hd">
-                    <p class="font-content text-md">Success in toda's digital world requires innovation,adaptability and the right tecthnology. Here at SESWARE we help business transform,optimize, and grow by leveraging the power of cutting-edge digital solutions. Let's push boundaries and build the future together!</p>
-                    <div class="flex flex-col gap-3 lg:flex-row lg:gap-20">
-                        <div class="flex flex-col gap-2">
-                            <h3 class="text-lg font-content">Our Vision </h3>
-                            <div class="flex flex-col gap-1">
-                                <div class="flex gap-1 items-center">
-                                    <i class="fa-solid fa-check-circle text-lg text-hd rounded-circle"></i>
-                                    <span class="font-content text-md">To be a global leader in digital transformation.</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-2">
-                            <h3 class="text-lg font-content">Our Mission </h3>
-                            <div class="flex flex-col gap-1">
-                                <div class="flex gap-1 items-center">
-                                    <i class="fa-solid fa-check-circle text-lg text-hd rounded-circle"></i>
-                                    <span class="font-content text-md">Empowering business with cutting-edge digital solutioins</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-full h-img lg:w-1/2 rounded-lg bg-cover bg-center" style="background-image: linear-gradient(to right,rgba(175, 111, 238, 0.199),hsla(266, 89%, 11%, 0.547)),url('./images/KANYASI_50.jpg')">
-                </div>
-            </div>
-
-            <div class="lg:flex lg:flex-row lg:gap-8 lg:item-center font-content">
-                <div class="lg:w-1/2 rounded-lg bg-cover bg-center" style="background-image: linear-gradient(to right,rgba(175,111, 238, 0.199),hsla(266, 91%, 18%, 0.562)),url('./images/KANYASI_50.jpg')"></div>
-                <div class="w-full lg:w-1/2 flex flex-col gap-6">
-                    <div class="p-1 flex bg-slate-200 items-center rounded-md lg:text-lg">
-                        <div class="p-4 w-2/5 lg:p-5 bg-hd lg:w-2/5 rounded-md">
-                            <h1 class="text-center text-white">3 <br> YEARS OF <br>Experience</h1>
-                        </div>
-                        <h2 class="text-lg p-4 lg:text-xl font-medium font-headimg lg:p-5">Our Main Goal is To enhance Business through Technology</h2>
-                    </div>
-                    <div class="flex flex-col gap-3">
-                        <h2 class="text-xl lg:text-3xl font-heading">How We Inhance Business via Technology?</h2>
-                        <hr class="h-1 w-20 lg:h-1.5 lg:w-20 bg-hd">
-                        <p class="text-md">Our solutions help businesses grow by enhancing efficiency,streamlining operationss,and improve-decision making.Through different solutions and technology we drive into innovation and scalability.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        {{-- CHOOSING US --}}
-
-        <section class="px-mob py-top lg:py-6 lg:px-banner font-content">
-            <span>WHY CHOOSING US</span>
-            <h2 class="text-xl mb-small lg:text-3xl font-medium font-headimg lg:mb-small">Why <a href="" class="text-hd">sesware</a> is The Right Choice for you</h2>
-            <div class="flex  flex-col gap-3 lg:flex lg:flex-row lg:gap-4">
-                <div class="w-full lg:w-service flex flex-col lg:flex-col">
-                    <div class="grid grid-cols-1 gap-3 lg:grid-cols-2 lg:gap-4">
-                        <div class="bg-slate-200 rounded-sm p-3 lg:p-4">
-                            <i class="fa-solid fa-lock p-2 lg:p-3 border-2 border-hd text-hd rounded-circle"></i>
-                            <h2 class="text-lg font-medium font-content mt-3 mb-3 text-p">Innovative solutions</h2>
-                            <p>We stay ahead of industry trends,using the latest technology to develop solutions that drive business efficiency and success.</p>
-                        </div>
-                        <div class="bg-slate-200 rounded-sm p-3 lg:p-4">
-                            <i class="fa-solid fa-lock p-2 lg:p-3 border-2 border-hd text-hd rounded-circle"></i>
-                            <h2 class="text-lg font-medium font-content mt-3 mb-3 text-p">Scalability and Flexibility</h2>
-                            <p>Our solutions are designed to grow with your business,ensuring long-term adaptability and seamless expansion.</p>
-                        </div>
-                    </div>
-                    <div class="bg-slate-200 rounded-sm p-3 lg:p-4 mt-top lg:mt-small">
-                        <i class="fa-solid fa-lock p-2 lg:p-3 border-2 border-hd text-hd rounded-circle"></i>
-                        <h2 class="text-lg font-medium font-content mt-3 mb-3 text-p">Reliable Support</h2>
-                        <p>We provide continous assistance,maintanance,and updates to keep your technology running smoothly and efficiency.Through our customer services we can provide the best support.</p>
-                    </div>
-                </div>
-                <div class="w-full flex-col lg:w-2/5 flex lg:flex-col">
-                    <div class="bg-hd text-white rounded-sm p-3 lg:p-4">
-                        <i class="fa-solid fa-lock p-3 lg:p-3 border-2 border-white text-white rounded-circle"></i>
-                        <h2 class="text-lg font-medium font-content mt-3 mb-3 text-white">Fast and Secured</h2>
-                        <p>Solutions are optimized for high performance,ensuring seamless operations and quick response times.</p>
-                        <p class="my-top lg:mb-8">We implement advanced security measures to protect your data,ensuring safe and trustworthy digital experience.</p>
-                        <a href="{{route('contact')}}" class="hidden lg:block bg-p lg:p-3 text-white rounded-sm text-center" style="background-image: linear-gradient(to right,#9129f8d2,hsla(266, 89%, 11%, 0.944))"><button>Work with Us</button></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        {{-- FOOTER --}}
-
-
-        <section class="bg-p py-top px-2 lg:px-banner font-content text-slate-300">
-            <div class="grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-4 ">
-                <div class="flex flex-col gap-2 lg:gap-3">
-                    <h3 class="text-white font-semibold">Company</h3>
-                    <a href="{{route('about')}}">About</a>
-                    <a href="{{route('about')}}">Team members</a>
-                    <a href="{{route('product')}}">Projects</a>
-                    <a href="{{route('home')}}">Investors</a>
-                </div>
-                <div class="flex flex-col gap-2 lg:gap-3">
-                    <h3 class="text-white font-semibold">Our Services</h3>
-                    <a href="{{route('service')}}">Home</a>
-                    <a href="{{route('service')}}">Web Development</a>
-                    <a href="{{route('service')}}">System Development</a>
-                    <a href="{{route('service')}}">SEO</a>
-                </div>
-                <div class="flex flex-col gap-2 lg:gap-3">
-                    <h3 class="text-white font-semibold">Quick Link</h3>
-                    <a href="{{route('contact')}}">Knowledge base</a>
-                    <a href="{{route('contact')}}">Hire an Expert</a>
-                    <a href="{{route('contact')}}">FAQ's</a>
-                    <a href="{{route('contact')}}">Contact</a>
-                </div>
-                <div class="flex flex-col gap-2 lg:gap-3">
-                    <h3 class="text-white font-semibold">Location</h3>
-                    <a href="{{route('contact')}}">Kilimanjaro</a>
-                    <a href="{{route('contact')}}">Tanzania</a>
-                    <a href="{{route('contact')}}">P.O.BOX 123</a>
-                    <a href="{{route('contact')}}">Lindi Street</a>
-                </div>
-            </div>
-        </section>
-        <div class="w-full flex items-centerbg-slate-300">
-            <div class="md:w-1/4 md:py-4 md:pl-4 md:flex gap-4 text-lg text-white md:bg-hd hidden md:block">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-            </div>
-            <div class="text-center mt-2 md:ml-auto">
-                <a href="#"><span>Copyrights&copy;2025. All rights reserved | Privacy policy | Terms &
-                        conditions</span></a>
             </div>
         </div>
+    </div>
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-    </body>
-</html>
+    {{-- our story --}}
+    <section class="w-full bg-gradient-to-r from-blue-300 to-blue-100 p-6 md:p-12">
+        <div class="w-11/12 md:w-8/12 mx-auto text-center my-2">
+            <h2 class="text-blue-900 font-semibold mb-4 uppercase tracking-wide">Our Story</h2>
+            <p class="text-lg md:text-2xl font-semibold text-gray-700">What made Sesware Nexus evolve</p>
+        </div>
+        <div class="w-11/12 md:w-8/12 my-2 text-justify">
+            <p class="text-lg text-gray-600 mt-4">Sesware Nexus was born from a shared vision among our Founders to bridge
+                the gap between technology and business needs in Tanzania.</p>
+            <p class="text-lg text-gray-600 mt-4">Recognizing the growing demand for customized software solutions and
+                professional graphic design, we established Sesware Nexus in 2024 to provide local businesses with reliable
+                and innovative services.</p>
+            <p class="text-lg text-gray-600 mt-4">From our early projects, we focused on Providing Software solutions for
+                small to mid-size businesses. Commitment to Quality, Integrity and Collaboration has been a cornerstone of
+                our growth.</p>
+            <p class="text-lg text-gray-600 mt-4">Sesware Nexus is a trusted partner for businesses across different regions
+                and industries in Tanzania, helping them leverage the power of technology and design to achieve their goals.
+            </p>
+        </div>
+
+        <div class="w-11/12 md:w-8/12 my-4">
+            <h4 class="text-lg md:text-xl font-semibold text-gray-700 mb-4">Our Pillars</h4>
+            <div class="text-gray-700 flex items-center flex-wrap gap-2">
+                <span class="rounded-full py-1 px-3 border border-gray-500 font-semibold">Innovation</span>
+                <span class="rounded-full py-1 px-3 border border-gray-500 font-semibold">Quality</span>
+                <span class="rounded-full py-1 px-3 border border-gray-500 font-semibold">Collaboration</span>
+                <span class="rounded-full py-1 px-3 border border-gray-500 font-semibold">Integrity</span>
+                <span class="rounded-full py-1 px-3 border border-gray-500 font-semibold">Client Focus</span>
+            </div>
+        </div>
+    </section>
+
+    {{-- mission & vision --}}
+    <section class="md:py-16">
+        <div class="w-11/12 md:w-10/12 mx-auto flex flex-col gap-4">
+            <div class="w-11/12 md:w-8/12 mx-auto text-center my-2">
+                <h2 class="text-blue-900 font-semibold mb-4 uppercase tracking-wide">Our Mission</h2>
+                <p class="text-lg md:text-2xl font-semibold text-gray-700">Know What Drives Us</p>
+            </div>
+            <div class="grid grid-cols-1 gap-3 md:grid md:grid-cols-2 md:gap-4 lg:grid lg:grid-cols-2 lg:gap-4 text-md">
+                <div class="p-6 bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg hover:shadow-md shadow-blue-200">
+                    <a href="">
+                        <div class="flex flex-col gap-2">
+                            <i class="fa fa-bullseye text-3xl text-blue-900 rounded-sm text-lg my-2"></i>
+                            <h2 class="text-lg tracking-wide text-blue-900 font-semibold">Our Mission</h2>
+                            <p class="text-gray-600 text-justify">To deliver exceptional software and design services that
+                                exceed client expectations and contribute to the success of businesses in our community.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="p-6 bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg hover:shadow-md shadow-blue-200">
+                    <a href="">
+                        <div class="flex flex-col gap-2">
+                            <i class="fa fa-eye text-3xl text-blue-900 rounded-sm text-lg my-2"></i>
+                            <h2 class="text-lg tracking-wide text-blue-900 font-semibold">Our vision</h2>
+                            <p class="text-gray-600 text-justify">To play a key role in driving digital transformation in
+                                Tanzania, enabling businesses to compete effectively in the global market.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- team --}}
+    <section class="py-8 md:py-16">
+        <div class="w-11/12 mx-auto flex flex-col gap-4">
+            <div class="w-11/12 md:w-8/12 mx-auto text-center my-2">
+                <h2 class="text-blue-900 font-semibold mb-4 uppercase tracking-wide">Our Exceptional Team</h2>
+                <p class="text-lg md:text-2xl font-semibold text-gray-700">Meet our Professional Team That drives Innovation
+                    at Sesware</p>
+            </div>
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 text-md">
+                <div class="p-2 bg-gradient-to-b from-blue-400 to-blue-50 rounded-lg hover:shadow-md shadow-blue-200">
+                    <div class="w-full flex flex-col gap-2">
+                        <div class="w-full h-52 overflow-hidden">
+                            <img src="{{ asset('images/KANYASI_57.jpg') }}" alt="design mockup"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex flex-col items-center space-y-2">
+                            <h2 class="text-lg text-center tracking-wide text-blue-900 font-semibold">Suleiman Ramadhan</h2>
+                            <p class="italic text-sm text-center text-gray-600">Co-Founder & Lead Software Developer</p>
+                            <div class="w-full flex items-center space-x-2 justify-center">
+                                <a href="">
+                                    <i class="fab fa-x border border-blue-900 rounded-full py-2 px-3"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-instagram border border-blue-900 rounded-full p-2"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-linkedin border border-blue-900 rounded-full p-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 bg-gradient-to-b from-blue-400 to-blue-50 rounded-lg hover:shadow-md shadow-blue-200">
+                    <div class="flex flex-col gap-2">
+                        <div class="w-full h-52 overflow-hidden">
+                            <img src="{{ asset('images/KANYASI_50.jpg') }}" alt="design mockup"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex flex-col items-center space-y-2">
+                            <h2 class="text-lg text-center tracking-wide text-blue-900 font-semibold">Erick Manyasi</h2>
+                            <p class="italic text-sm text-center text-gray-600">Co-Founder & Lead Software Developer</p>
+                            <div class="w-full flex items-center space-x-2 justify-center">
+                                <a href="">
+                                    <i class="fab fa-x border border-blue-900 rounded-full py-2 px-3"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-instagram border border-blue-900 rounded-full p-2"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-linkedin border border-blue-900 rounded-full p-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 bg-gradient-to-b from-blue-400 to-blue-50 rounded-lg hover:shadow-md shadow-blue-200">
+                    <div class="flex flex-col gap-2">
+                        <div class="w-full h-52 overflow-hidden">
+                            <img src="{{ asset('images/KANYASI_61.jpg') }}" alt="design mockup"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex flex-col items-center space-y-2">
+                            <h2 class="text-lg text-center tracking-wide text-blue-900 font-semibold">Said Bessa</h2>
+                            <p class="italic text-sm text-center text-gray-600">Co-Founder & Lead Software Developer</p>
+                            <div class="w-full flex items-center space-x-2 justify-center">
+                                <a href="">
+                                    <i class="fab fa-x border border-blue-900 rounded-full py-2 px-3"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-instagram border border-blue-900 rounded-full p-2"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-linkedin border border-blue-900 rounded-full p-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 bg-gradient-to-b from-blue-400 to-blue-50 rounded-lg hover:shadow-md shadow-blue-200">
+                    <div class="flex flex-col gap-2">
+                        <div class="w-full h-52 overflow-hidden">
+                            <img src="{{ asset('images/KANYASI_61.jpg') }}" alt="design mockup"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex flex-col items-center space-y-2">
+                            <h2 class="text-lg text-center tracking-wide text-blue-900 font-semibold">Gilbert Akabanga</h2>
+                            <p class="italic text-sm text-center text-gray-600">Senior Graphic Designer</p>
+                            <div class="w-full flex items-center space-x-2 justify-center">
+                                <a href="">
+                                    <i class="fab fa-x border border-blue-900 rounded-full py-2 px-3"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-instagram border border-blue-900 rounded-full p-2"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-linkedin border border-blue-900 rounded-full p-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- partner with us --}}
+    <section class="mx-auto p-6 md:p-12 mt-12 bg-gradient-to-tl from-blue-50 to-blue-100">
+        <div class="w-full flex flex-col md:flex-row">
+            <div class="w-full md:w-1/3 my-2 p-4">
+                <i class="fa fa-handshake text-3xl md:text-5xl text-blue-900"></i>
+                <h3 class="text-3xl md:text-5xl text-blue-900 font-semibold">Partner With Us</h3>
+                <p class="italic text-gray-600 my-4 text-lg">Your Home For Smart Software solutions</p>
+            </div>
+            <div class="w-full md:w-2/3 my-2 flex flex-col md:flex-row flex-wrap text-font">
+                <div class="w-full md:w-1/2 my-2">
+                    <div
+                        class="w-11/12 mx-auto flex rounded-md p-3 bg-gradient-to-tr from-blue-50 to-blue-200 border border-blue-900 flex-col hover:scale-105 transition-transform duration-500">
+                        <i class="fa fa-puzzle-piece text-blue-900 m-2 text-xl"></i>
+                        <span class="text-font text-lg">Tailored software and design to meet your unique business
+                            needs</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 my-2">
+                    <div
+                        class="w-11/12 mx-auto flex rounded-md p-3 bg-gradient-to-tr from-blue-100 to-blue-200 border border-blue-900 flex-col hover:scale-105 transition-transform duration-500">
+                        <i class="fa fa-clock text-blue-900 m-2 text-xl"></i>
+                        <span class="text-font text-lg">On-time project delivery and ongoing support</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 my-2">
+                    <div
+                        class="w-11/12 mx-auto flex rounded-md p-3 bg-gradient-to-tr from-blue-100 to-blue-200 border border-blue-900 flex-col hover:scale-105 transition-transform duration-500">
+                        <i class="fa fa-users text-blue-900 m-2 text-xl"></i>
+                        <span class="text-font text-lg">We work closely with you to ensure your vision is realized</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 my-2">
+                    <div
+                        class="w-11/12 mx-auto flex rounded-md p-3 bg-gradient-to-tr from-blue-100 to-blue-200 border border-blue-900 flex-col hover:scale-105 transition-transform duration-500">
+                        <i class="fa fa-line-chart text-blue-900 m-2 text-xl"></i>
+                        <span class="text-font text-lg">Delivering solutions that drive measurable business growth</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="w-full md:w-10/12 mx-auto py-12">
+            <div class="w-11/12 md:w-8/12 mx-auto text-center my-2">
+                <h2 class="text-blue-900 font-semibold mb-4 uppercase tracking-wide text-lg md:text-xl">Ready to transform
+                    and bring impact to your business?</h2>
+                <p class="text-lg md:text-4xl font-semibold text-gray-700">Let's Discuss Your Project </p>
+            </div>
+            <div class="w-fit my-8 mx-auto">
+                <button
+                    class="py-3 px-4 bg-blue-950 hover:bg-blue-900 rounded-full font-semibold text-lg md:text-xl transition-colors duration-1000 text-white">
+                    Get In Touch
+                </button>
+            </div>
+        </div>
+    </section>
+@endsection

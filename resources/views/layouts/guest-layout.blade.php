@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @vite('resources/css/app.css')
+    <title>SESWARE</title>
+
+    @include('partials.links')
+</head>
+
+<body class="p-0 m-0 list-none">
+    {{-- HEADER/NAV BAR --}}
+    <nav
+        class="mx-0 px-6 lg:px-12 py-2 lg:text-inherit flex justify-between lg:py-4 lg:flex lg:justify-between lg:gap-6 items-center sticky top-0 z-50 bg-blue-950 opacity-95">
+        <div class="h-10 w-1/4  lg:h-16 lg:w-1/5 bg-contain bg-no-repeat"
+            style="background-image: url('./images/logo.png')">
+        </div>
+        <div class="lg:flex lg:space-x-4 lg:justify-between lg:w-fit text-font text-lg hidden text-white">
+            <a href="{{ route('home') }}">
+                <li>Home</li>
+            </a>
+
+            <a href="{{ route('about') }}">
+                <li>About Us</li>
+            </a>
+
+            <a href="{{ route('service') }}">
+                <li>Services</li>
+            </a>
+
+            <a href="{{ route('works') }}">
+                <li>Works</li>
+            </a>
+
+            <a href="{{ route('contact') }}">
+                <li>Contact us</li>
+            </a>
+        </div>
+        <div class="lg:hidden text-white text-lg">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-x" style="display: none"></i>
+        </div>
+    </nav>
+
+    @yield('content')
+
+    {{-- FOOTER --}}
+
+    <section class="w-full p-6 lg:p-12 font-text text-slate-300 bg-gradient-to-r from-blue-950 to-blue-800">
+        <div class="flex flex-col lg:flex-row justify-between gap-3">
+            <div class="w-full lg:w-2/6 flex flex-col p-4">
+                <img src="{{ asset(path: 'images/logo.png') }}" alt="" class="w-2/5 mb-4">
+                <p class="text-lg text-justify">Sesware Nexus is a dynamic team of software developers and graphic
+                    designers dedicated to empowering businesses in Tanzania with cutting-edge technology and creative
+                    solutions</p>
+            </div>
+            <div class="w-full lg:w-1/6 flex flex-col space-y-3 p-4">
+                <h3 class="text-white font-semibold text-xl">Company</h3>
+                <div class="flex flex-col space-y-2 text-lg">
+                    <a href="{{ route('about') }}" class="hover:text-slate-400">About</a>
+                    <a href="{{ route('works') }}" class="hover:text-slate-400">Featured Projects</a>
+                    <a href="{{ route('contact') }}" class="hover:text-slate-400">Contact Us</a>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/6 flex flex-col space-y-3 p-4">
+                <h3 class="text-white font-semibold text-xl">Services</h3>
+                <div class="flex flex-col space-y-2 text-lg">
+                    <a href="{{ route('service') }}" class="hover:text-slate-400">Web App Development</a>
+                    <a href="{{ route('service') }}" class="hover:text-slate-400">Mobile Applications</a>
+                    <a href="{{ route('service') }}" class="hover:text-slate-400">Graphic Design</a>
+                </div>
+            </div>
+            <div class="w-full lg:w-2/6 flex flex-col space-y-3 p-4">
+                <h3 class="text-white font-semibold text-xl">Connect With US</h3>
+                <div class="flex flex-col space-y-4 text-lg">
+                    <a href="" class="hover:text-slate-400">
+                        <div class="w-full flex items-center space-x-4">
+                            <i class="fa fa-envelope border border-gray-100 hover:bg-blue-900 rounded-full p-2"></i>
+                            <span>info@seswarenexus.com</span>
+                        </div>
+                    </a>
+                    <a href="" class="hover:text-slate-400">
+                        <div class="w-full flex items-center space-x-4">
+                            <i class="fa fa-phone border border-gray-100 hover:bg-blue-900 rounded-full p-2"></i>
+                            <span>0712345678</span>
+                        </div>
+                    </a>
+                    <div class="w-full flex items-center space-x-6">
+                        <a href="">
+                            <i class="fab fa-x border border-gray-100 hover:bg-blue-900 rounded-full py-3 px-4"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-instagram border border-gray-100 hover:bg-blue-900 rounded-full p-3"></i>
+                        </a>
+                        <a href="">
+                            <i class="fab fa-linkedin border border-gray-100 hover:bg-blue-900 rounded-full p-3"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border border-gray-500 mt-12"></div>
+        <div>
+            <p class="text-center my-2">&copy; <span>{{ date('Y') }}</span> sesware nexus | All Rights Reserved.
+            </p>
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{{ asset('js/scipt.js') }}"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

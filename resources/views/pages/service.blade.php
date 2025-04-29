@@ -1,333 +1,325 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        @vite('resources/css/app.css')
-        <title>Laravel</title>
-        <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.css">
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=Roboto:400,500,600&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.bunny.net/css?family=Merriweather:400,500,600&display=swap" rel="stylesheet"/>
-        {{-- <style>
-            p{
-                color: #c892f2;
-            }
-        </style> --}}
-    </head>
-    <body class="p-0 m-0 list-none">
-        {{-- HEADER/NAV BAR --}}
-        <section class="text-white w-full h-auto bg-cover  bg-blue-200" style="background-image: linear-gradient(to right,rgba(175, 111, 238, 0.199),hsla(266, 89%, 11%, 0.944)),url('./images/KANYASI_66.jpg')">
-            <nav class="mx-0 px-6 py-2 lg:text-inherit flex justify-between lg:py-6 lg:mx-banner lg:flex lg:justify-between lg:gap-6 items-center">
-                <div class="h-10 w-1/4  lg:h-16 lg:w-1/5 bg-cover bg-center" style="background-image: url('./images/SIDE-01.png')">
-                </div>
-                <div class="lg:flex lg:justify-between lg:w-2/5 font-heading hidden">
-                    <a href="{{route('home')}}">
-                        <li>Home</li>
-                    </a>
-
-                    <a href="{{route('about')}}">
-                        <li>About Us</li>
-                    </a>
-
-                    <a href="{{route('service')}}">
-                        <li>Services</li>
-                    </a>
-
-                    <a href="{{route('product')}}">
-                        <li>Products</li>
-                    </a>
-
-                    <a href="{{route('contact')}}">
-                        <li>Contact us</li>
-                    </a>
-                </div>
-                <div class="lg:hidden text-white text-lg">
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-x" style="display: none"></i>
-                </div>
-            </nav>
-
-            <div class="flex flex-col gap-4 mx-4 mt-banner pb-10 lg:flex lg:flex-row lg:mx-banner lg:pl-10 lg:mt-banner lg:pb-14 items-center ">
-                <div class="flex flex-col gap-4 lg:w-4/5 text-center" style="margin: 5% auto">
-                    <h2 class="text-mobilehead lg:text-headimg font-headimg" data-aos="fade-up" data-aos-duration="3000">Services</h2>
-                    <h2><hr class="w-6 h-1 lg:w-8 lg:h-2 bg-white border-none" style="margin: 0 auto"></h2>
-                    <p class="text-md font-heading  lg:block" data-aos="fade-up" data-aos-duration="3000">We provide innovative idea and scalable software solutions to drive business growth.Specializing in delivering high-quality software solutions toilored to meet the unique needs of business across the industry.</p>
-                </div>
-                <div class="gap-4 lg:w-1/5 items-center" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="flex flex-row lg:flex-col gap-6 lg:w-fit lg:ml-auto text-lg text-white cursor-pointer">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                    </div>
+@extends('layouts.guest-layout')
+@section('content')
+            <div class="w-11/12 md:w-3/5 mx-auto">
+                <div class="my-8 text-center">
+                    <h2 class="text-xl font-heading font-semibold tracking-wider text-blue-900 uppercase">
+                        Our Services
+                    </h2>
+                    <p class="text-2xl my-2 text-gray-700">Solutions That Drive Your Business Forward</p>
+                    <p class="text-lg text-gray-600 mt-4">Sesware Nexus provides a comprehensive suite of software
+                        development and graphic design services to empower businesses in Tanzania. We combine technical
+                        expertise with creative vision to deliver solutions that meet your specific needs and drive
+                        measurable results</p>
                 </div>
             </div>
-        </section>
 
-        <section class="bg-hd px-4 py-top lg:px-banner lg:py-top font-content">
-            <div class="grid grid-cols-2 gap-3 md:grid md:grid-cols-4 lg:grid lg:grid-cols-7 lg:gap-4">
-                <div class="flex gap-2 lg:gap-2 items-center">
-                    <div class="flex flex-col gap-2">
-                        <h1 class="text-xl lg:text-2xl font-semibold text-white">10+</h1>
-                        <h2 class="text-lg font-content text-slate-400">Projects</h2>
-                    </div>
-                </div>
-                <hr class="hidden lg:block lg:w-1 border-none lg:h-16 bg-slate-500 g:w-fit lg:ml-auto">
-                <div class="flex lg:gap-2 items-center">
-                    <div class="flex flex-col gap-2">
-                        <h1 class="text-xl lg:text-2xl font-semibold text-white">24/7</h1>
-                        <h2 class="text-lg font-content text-slate-400">Services</h2>
-                    </div>
-                </div>
-                <hr class="hidden lg:block lg:w-1 border-none lg:h-16 bg-slate-500 g:w-fit lg:ml-auto">
-                <div class="flex lg:gap-2 items-center">
-                    <div class="flex flex-col gap-2">
-                        <h1 class="text-xl lg:text-2xl font-semibold text-white">100 +</h1>
-                        <h2 class="text-lg font-content text-slate-400">Customers</h2>
-                    </div>
-                </div>
-                <hr class="hidden lg:block lg:w-1 border-none lg:h-16 bg-slate-500 g:w-fit lg:ml-auto">
-                <div class="flex lg:gap-2 items-center">
-                    <div class="flex flex-col gap-2">
-                        <h1 class="text-xl lg:text-2xl font-semibold text-white"> 3+</h1>
-                        <h2 class="text-lg font-content text-slate-400">Years Experience</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
+    {{-- software dev --}}
+    <section class="w-full bg-gradient-to-r from-blue-50 to-blue-100 px-4 py-16">
+        <h3 class="text-blue-900 text-lg text-center font-semibold">Software Development</h3>
+        <p class="text-lg text-gray-600 text-center my-2 w-10/12 mx-auto">Sesware Nexus leverages cutting-edge technologies
+            to build custom software solutions that streamline your operations, enhance productivity, and provide valuable
+            insights.</p>
 
+        <div
+            class="w-full md:w-11/12 mx-auto px-8 py-12 bg-gradient-to-r from-blue-950 to-blue-900 rounded-lg my-8 text-blue-100">
+            <div class="flex flex-col md:flex-row gap-3">
+                <div class="w-full md:w-1/2">
+                    <h4 class="text-blue-200 text-2xl font-semibold mb-4">Web Application Development</h4>
+                    <p class="text-justify text-lg">We design, develop, and deploy scalable and secure web applications that
+                        automate business processes, manage data effectively, and facilitate online interactions. Our
+                        expertise includes e-commerce platforms, content management systems (CMS), customer relationship
+                        management (CRM) systems, and custom web portals.</p>
 
-
-        <section class="px-mob py-top lg:px-banner lg:py-top font-content">
-            <div class="flex flex-col gap-4 lg:flex lg:flex-row lg:gap-4">
-                <div class="lg:w-1/2 flex lg:flex-row lg:gap-4">
-                    <div class="hidden md:flex md:flex-col md:gap-3 lg:w-2/6">
-                        <div class="flex flex-col lg:gap-3 text-center bg-purple-100 rounded-sm lg:p-4">
-                            <i class="fa-solid fa-file text-xl"></i>
-                            <h1 class="text-2xl font-medium">98%</h1>
-                            <span>Successfull clients</span>
+                    <h5 class="text-blue-200 text-xl font-semibold my-4">Get benefited:</h5>
+                    <p class="text-lg">Increased efficiency and productivity</p>
+                    <p class="text-lg">Improved data management</p>
+                    <p class="text-lg">Enhanced collaboration</p>
+                    <p class="text-lg">Expanded reach to customers</p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h4 class="text-blue-200 font-semibold mb-3 mt-3 md:mt-0 md:ml-12 text-lg text-center md:text-left">The
+                        tools we use</h4>
+                    <div class="w-full flex flex-wrap justify-center items-center">
+                        <div class="w-1/2 md:w-1/4 my-2">
+                            <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
+                                <i class="fab fa-react text-xl"></i>
+                                <h2 class="tracking-wide font-semibold">React</h2>
+                            </div>
                         </div>
-                        <div class="flex flex-col lg:gap-3 text-center bg-purple-100 rounded-sm lg:p-4">
-                            <i class="fa-solid fa-file text-xl"></i>
-                            <h1 class="text-2xl font-medium">98%</h1>
-                            <span>Positive reviews</span>
+                        <div class="w-1/2 md:w-1/4 my-2">
+                            <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
+                                <i class="fab fa-node-js text-xl"></i>
+                                <h2 class="tracking-wide font-semibold">Node.js</h2>
+                            </div>
                         </div>
-                        <div class="flex flex-col lg:gap-3 text-center bg-hd text-white rounded-sm lg:p-4">
-                            <i class="fa-solid fa-file text-xl"></i>
-                            <h1 class="text-2xl font-medium">98%</h1>
-                            <span>Successfull clients</span>
+                        <div class="w-1/2 md:w-1/4 my-2">
+                            <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
+                                <i class="fab fa-laravel text-xl"></i>
+                                <h2 class="tracking-wide font-semibold">Laravel</h2>
+                            </div>
                         </div>
-                    </div>
-                    <div class="w-full h-img lg:w-3/5 lg:h-auto rounded-lg bg-cover bg-center" style="background-image: url('./images/KANYASI_36.jpg')"></div>
-                </div>
-                <div class="flex flex-col gap-3 lg:gap-3 lg:w-1/2">
-                    <h2 class="text-2xl lg:text-3xl font-headimg">Take your Business To The Next Level ! </h2>
-                    <hr class="h-1 w-20 lg:h-1.5 lg:w-20 bg-hd">
-                    <p class="font-content text-md">We are commited in delivering exceptional customer service to ensure a seamless experience with our software solutions.Our dedicated support team is always ready to assist you with any querries,technical issues, or guidance you may need.</p>
-                    <div class="flex flex-col gap-3 lg:flex-row lg:gap-20">
-                        <div class="flex flex-col">
-                            <div class="grid grid-cols-1 gap-3 lg:grid-cols-2 gap-6">
-                                <div class="flex gap-2 lg:gap-1 items-center">
-                                    <i class="fa-solid fa-check-circle text-lg text-hd rounded-circle"></i>
-                                    <span class="font-content text-md font-medium">24/7 hours</span>
-                                </div>
-                                <div class="flex gap-2 lg:gap-1items-center">
-                                    <i class="fa-solid fa-check-circle text-lg text-hd rounded-circle"></i>
-                                    <span class="font-content text-md font-medium">Monday - Friday</span>
-                                </div>
-                                <div class="flex gap-2 lg:gap-1 items-center">
-                                    <i class="fa-solid fa-check-circle text-lg text-hd rounded-circle"></i>
-                                    <span class="font-content text-md font-medium">+255 123 456 789</span>
-                                </div>
-                                <div class="flex gap-2 lg:gap-1 items-center">
-                                    <i class="fa-solid fa-check-circle text-lg text-hd rounded-circle"></i>
-                                    <span class="font-content text-md font-medium">sesware@gmail.com</span>
-                                </div>
+                        <div class="w-1/2 md:w-1/4 my-2">
+                            <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
+                                <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                                    class="w-8 h-8" alt="Tailwind CSS" />
+                                <h2 class="tracking-wide font-semibold">Tailwind</h2>
+                            </div>
+                        </div>
+                        <div class="w-1/2 md:w-1/4 my-2">
+                            <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
+                                <i class="fab fa-bootstrap text-xl"></i>
+                                <h2 class="tracking-wide font-semibold">Bootstrap</h2>
+                            </div>
+                        </div>
+                        <div class="w-1/2 md:w-1/4 my-2">
+                            <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
+                                <img src="{{ asset('images/mongodb-4.webp') }}" alt="" class="w-8 h-8">
+                                <h2 class="tracking-wide font-semibold">MongoDB</h2>
+                            </div>
+                        </div>
+                        <div class="w-1/2 md:w-1/4 my-2">
+                            <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
+                                <img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" alt="MySQL"
+                                    class="w-8 h-8">
+                                <h2 class="tracking-wide font-semibold">mySQL</h2>
                             </div>
                         </div>
                     </div>
-                    <a href="{{route('contact')}}" class="w-max md:mt-2 p-2 rounded-sm lg:w-max text-md font-content lg:p-2 lg:rounded-sm text-white hover:bg-p" style="background-image: linear-gradient(to right,#9129f8d2,hsla(266, 89%, 11%, 0.944))">Talk with Customer Service</a>
+
+                    <div class="w-full m-4 py-4">
+                        <div class="text-blue-100 flex items-center flex-wrap gap-2">
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">User-friendly
+                                interfaces</span>
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Database
+                                integration</span>
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">API development</span>
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Responsive
+                                design</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-
-
-        <section class="px-mob py-top lg:px-banner lg:py-top font-content">
-            <div class="flex flex-col gap-1">
-                <h2 class="text-xl lg:text-xl text-hd font-headimg">Which Services we Provide </h2>
-                <h2 class="text-2xl lg:text-3xl font-headimg">Modern & Intuitive Technology <br> <span class="text-hd">Solution</span> Available</h2>
-            </div>
-            <div class="grid grid-cols-1 gap-3 mt-small lg:grid lg:grid-cols-4 lg:gap-6 lg:mt-small">
-                <a href="">
-                    <div class="bg-hd p-7 lg:p-5 rounded-md lg:rounded-md flex flex-col lg:gap-3 transition-all duration-300 hover:bg-p">
-                        <i class="fa-solid fa-paint-brush text-2xl text-white mb-small"></i>
-                        <h2 class="text-lg lg:text-lg text-white font-medium font-content">Web Design</h2>
-                        <div class="flex justify-between items-center">
-                            <div class="font-content">
-                                <span class="text-slate-300 text-md">Stunning, user-friendly website designs that captivate and engage.</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="bg-hd p-7 lg:p-5 rounded-md lg:rounded-md flex flex-col lg:gap-3 transition-all duration-300 hover:bg-p">
-                        <i class="fa-solid fa-code text-2xl text-white mb-small"></i>
-                        <h2 class="text-lg lg:text-lg text-white font-medium font-content">Web Development</h2>
-                        <div class="flex justify-between items-center">
-                            <div class="font-content">
-                                <span class="text-slate-300 text-md">Fast secure and scalable websites tailored to your needs are developed.</span>
-                            </div>
-                            {{-- <div>
-                                <i class="fa-solid fa-arrow-up-from-bracket p-3 lg:p-3 bg-p rounded-circle text-white hover:bg-hd"></i>
-                            </div> --}}
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="bg-hd p-7 lg:p-5 rounded-md lg:rounded-md flex flex-col lg:gap-3 transition-all duration-300 hover:bg-p">
-                        <i class="fa-solid fa-laptop-code text-2xl text-white mb-small"></i>
-                        <h2 class="text-lg lg:text-lg text-white font-medium font-content">Software Development</h2>
-                        <div class="flex justify-between items-center">
-                            <div class="font-content">
-                                <span class="text-slate-300 text-md">Custom software solutions to streamline operations and boost efficiency.</span>
-                            </div>
-                            {{-- <div>
-                                <i class="fa-solid fa-arrow-up-from-bracket p-3 lg:p-3 bg-p rounded-circle text-white hover:bg-hd"></i>
-                            </div> --}}
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="bg-hd p-7 lg:p-5 rounded-md lg:rounded-md flex flex-col lg:gap-3 transition-all duration-300 hover:bg-p">
-                        <i class="fa-solid fa-mobile-alt text-2xl text-white mb-small"></i>
-                        <h2 class="text-lg lg:text-lg text-white font-medium font-content">App Development</h2>
-                        <div class="flex justify-between items-center">
-                            <div class="font-content">
-                                <span class="text-slate-300 text-md">High performance apps that for seamless user experience are made.</span>
-                            </div>
-                            {{-- <div>
-                                <i class="fa-solid fa-arrow-up-from-bracket p-3 lg:p-3 bg-p rounded-circle text-white hover:bg-hd"></i>
-                            </div> --}}
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="bg-hd p-7 lg:p-5 rounded-md lg:rounded-md flex flex-col lg:gap-3 transition-all duration-300 hover:bg-p">
-                        <i class="fa-solid fa-search text-2xl text-white mb-small"></i>
-                        <h2 class="text-lg lg:text-lg text-white font-medium font-content">SEO</h2>
-                        <div class="flex justify-between items-center">
-                            <div class="font-content">
-                                <span class="text-slate-300 text-md">Improve search ranking and drive organic traffic through Search Engine Optimization.</span>
-                            </div>
-                            {{-- <div>
-                                <i class="fa-solid fa-arrow-up-from-bracket p-3 lg:p-3 bg-p rounded-circle text-white hover:bg-hd"></i>
-                            </div> --}}
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="bg-hd p-7 lg:p-5 rounded-md lg:rounded-md flex flex-col lg:gap-3 transition-all duration-300 hover:bg-p">
-                        <i class="fa-solid fa-user-tie text-2xl text-white mb-small"></i>
-                        <h2 class="text-lg lg:text-lg text-white font-medium font-content">IT consulting</h2>
-                        <div class="flex justify-between items-center">
-                            <div class="font-content">
-                                <span class="text-slate-300 text-md">Expert guidance to optimize technology and digital transformation.</span>
-                            </div>
-                            {{-- <div>
-                                <i class="fa-solid fa-arrow-up-from-bracket p-3 lg:p-3 bg-p rounded-circle text-white hover:bg-hd"></i>
-                            </div> --}}
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="bg-hd p-7 lg:p-5 rounded-md lg:rounded-md flex flex-col lg:gap-3 transition-all duration-300 hover:bg-p">
-                        <i class="fa-solid fa-server text-2xl text-white mb-small"></i>
-                        <h2 class="text-lg lg:text-lg text-white font-medium font-content">Hosting service</h2>
-                        <div class="flex justify-between items-center">
-                            <div class="font-content">
-                                <span class="text-slate-300 text-md">Reliable and secure hosting for uninterupted online presence with low cost.</span>
-                            </div>
-                            {{-- <div>
-                                <i class="fa-solid fa-arrow-up-from-bracket p-3 lg:p-3 bg-p rounded-circle text-white hover:bg-hd"></i>
-                            </div> --}}
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="bg-hd p-7 lg:p-5 rounded-md lg:rounded-md flex flex-col lg:gap-3 transition-all duration-300 hover:bg-p">
-                        <i class="fa-solid fa-object-group text-2xl text-white mb-small"></i>
-                        <h2 class="text-lg lg:text-lg text-white font-medium font-content">UX/UI design</h2>
-                        <div class="flex justify-between items-center">
-                            <div class="font-content">
-                                <span class="text-slate-300 text-md">Intuitive and engaging designs that enhances user experience to customers.</span>
-                            </div>
-                            {{-- <div>
-                                <i class="fa-solid fa-arrow-up-from-bracket p-3 lg:p-3 bg-p rounded-circle text-white hover:bg-hd"></i>
-                            </div> --}}
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </section>
-
-
-
-        {{-- FOOTER --}}
-
-        <section class="bg-p py-top px-2 lg:px-banner font-content text-slate-300">
-            <div class="grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-4 ">
-                <div class="flex flex-col gap-2 lg:gap-3">
-                    <h3 class="text-white font-semibold">Company</h3>
-                    <a href="{{route('about')}}">About</a>
-                    <a href="{{route('about')}}">Team members</a>
-                    <a href="{{route('product')}}">Projects</a>
-                    <a href="{{route('home')}}">Investors</a>
-                </div>
-                <div class="flex flex-col gap-2 lg:gap-3">
-                    <h3 class="text-white font-semibold">Our Services</h3>
-                    <a href="{{route('service')}}">Home</a>
-                    <a href="{{route('service')}}">Web Development</a>
-                    <a href="{{route('service')}}">System Development</a>
-                    <a href="{{route('service')}}">SEO</a>
-                </div>
-                <div class="flex flex-col gap-2 lg:gap-3">
-                    <h3 class="text-white font-semibold">Quick Link</h3>
-                    <a href="{{route('contact')}}">Knowledge base</a>
-                    <a href="{{route('contact')}}">Hire an Expert</a>
-                    <a href="{{route('contact')}}">FAQ's</a>
-                    <a href="{{route('contact')}}">Contact</a>
-                </div>
-                <div class="flex flex-col gap-2 lg:gap-3">
-                    <h3 class="text-white font-semibold">Location</h3>
-                    <a href="{{route('contact')}}">Kilimanjaro</a>
-                    <a href="{{route('contact')}}">Tanzania</a>
-                    <a href="{{route('contact')}}">P.O.BOX 123</a>
-                    <a href="{{route('contact')}}">Lindi Street</a>
-                </div>
-            </div>
-        </section>
-        <div class="w-full flex items-centerbg-slate-300">
-            <div class="md:w-1/4 md:py-4 md:pl-4 md:flex gap-4 text-lg text-white md:bg-hd hidden md:block">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-            </div>
-            <div class="text-center mt-2 md:ml-auto">
-                <a href="#"><span>Copyrights&copy;2025. All rights reserved | Privacy policy | Terms &
-                        conditions</span></a>
             </div>
         </div>
 
+        <div
+            class="w-full md:w-11/12 mx-auto px-8 py-12 bg-gradient-to-l from-blue-950 to-blue-900 rounded-lg my-8 text-blue-100">
+            <div class="flex flex-col md:flex-row gap-3">
+                <div class="w-full md:w-1/2">
+                    <h4 class="text-blue-200 text-2xl font-semibold mb-4">Mobile App Development</h4>
+                    <p class="text-justify text-lg">We create cross-platform mobile applications for Android and iOS
+                        devices, enabling you to connect with your customers on the go, provide mobile access to your
+                        services, and improve internal communication.</p>
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-    </body>
-</html>
+                    <h5 class="text-blue-200 text-xl font-semibold my-4">Get benefited:</h5>
+                    <p class="text-lg">Enhanced customer engagement</p>
+                    <p class="text-lg">Improved accessibility to services</p>
+                    <p class="text-lg">Increased brand loyalty</p>
+                    <p class="text-lg">Streamlined internal workflows</p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h4 class="text-blue-200 font-semibold mb-3 mt-3 md:mt-0 md:ml-12 text-lg text-center md:text-left">The
+                        tools we use</h4>
+                    <div class="w-full flex flex-wrap justify-center items-center">
+                        <div class="w-1/2 md:w-1/4 my-2">
+                            <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
+                                <i class="fab fa-react text-xl"></i>
+                                <h2 class="tracking-wide font-semibold">React Native</h2>
+                            </div>
+                        </div>
+                        <div class="w-1/2 md:w-1/4 my-2">
+                            <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
+                                <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                                    class="w-8 h-8" alt="Tailwind CSS" />
+                                <h2 class="tracking-wide font-semibold">Tailwind</h2>
+                            </div>
+                        </div>
+                        <div class="w-1/2 md:w-1/4 my-2">
+                            <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
+                                <img src="{{ asset('images/mongodb-4.webp') }}" alt="" class="w-8 h-8">
+                                <h2 class="tracking-wide font-semibold">MongoDB</h2>
+                            </div>
+                        </div>
+                        <div class="w-1/2 md:w-1/4 my-2">
+                            <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
+                                <img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" alt="MySQL"
+                                    class="w-8 h-8">
+                                <h2 class="tracking-wide font-semibold">mySQL</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full m-4 py-4">
+                        <div class="text-blue-100 flex items-center flex-wrap gap-2">
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Cross-platform
+                                development</span>
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">User-friendly
+                                interfaces</span>
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Push
+                                notifications</span>
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Integration with
+                                device features</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- graphic design --}}
+    <section class="w-full px-4 py-8 bg-gradient-to-r from-blue-50 to-blue-100">
+        <h3 class="text-blue-900 text-lg text-center font-semibold">Graphic Design</h3>
+        <p class="text-lg text-gray-600 text-center my-2 w-10/12 mx-auto">Sesware Nexus creates compelling visual
+            experiences that enhance your brand identity, communicate your message effectively, and engage your target
+            audience.</p>
+
+        <div
+            class="w-full md:w-11/12 mx-auto px-8 py-12 bg-gradient-to-r from-blue-950 to-blue-900 rounded-lg my-8 text-blue-100">
+            <div class="flex flex-col md:flex-row gap-3">
+                <div class="w-full md:w-1/2">
+                    <h4 class="text-blue-200 text-2xl font-semibold mb-4">Graphic Design</h4>
+                    <p class="text-justify text-lg">We develop comprehensive brand identities that establish a strong and
+                        consistent brand presence across all channels, We design a wide range of marketing materials that
+                        effectively communicate your brand message and promote your products or services, and visually
+                        appealing user interfaces (UI) and user experiences (UX) for software applications and websites</p>
+
+                    <h5 class="text-blue-200 text-xl font-semibold my-4">Get benefited:</h5>
+                    <p class="text-lg">Strong brand recognition</p>
+                    <p class="text-lg">Consistent brand messaging</p>
+                    <p class="text-lg">Enhanced customer engagement</p>
+                    <p class="text-lg">Improved user satisfaction</p>
+                    <p class="text-lg">Increased user engagement</p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h4 class="text-blue-200 font-semibold mb-3 mt-3 md:mt-0 md:ml-12 text-lg text-center md:text-left">The
+                        tools we use</h4>
+                    <div class="w-full flex flex-wrap justify-center items-center">
+                        <div class="w-1/2 md:w-1/4 my-2">
+                            <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
+                                <img src="https://www.vectorlogo.zone/logos/adobe/adobe-icon.svg" class="w-8 h-8"
+                                    alt="Adobe" />
+                                <h2 class="tracking-wide font-semibold">Adobe</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full m-4 py-4">
+                        <div class="text-blue-100 flex items-center flex-wrap gap-2">
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Logo design</span>
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Brand style
+                                guides</span>
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Website design</span>
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Print design</span>
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">User interface
+                                design</span>
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Posters</span>
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Banners</span>
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Flyers</span>
+                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Brochures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- approach --}}
+    <section class="w-full px-4 py-16">
+        <h3 class="text-blue-900 text-lg text-center font-semibold">How We Work</h3>
+        <p class="text-lg text-gray-600 text-center my-2 w-10/12 mx-auto">We follow a collaborative and iterative approach
+            to ensure that we deliver solutions that meet your needs and exceed your expectations.</p>
+
+        <div class="w-full my-2 flex flex-col md:flex-row flex-wrap text-font">
+            <div class="w-full md:w-1/3 my-2">
+                <div class="w-11/12 mx-auto flex rounded-md p-3 shadow-lg shadow-blue-100 border border-blue-900 flex-col">
+                    <span class="text-blue-900 text-xl my-2">1. Consultation</span>
+                    <p class="text-font text-lg text-gray-600">We begin by understanding your business goals, requirements,
+                        and challenges</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 my-2">
+                <div class="w-11/12 mx-auto flex rounded-md p-3 shadow-lg shadow-blue-100 border border-blue-900 flex-col">
+                    <span class="text-blue-900 text-xl my-2">2. Planning/Discovery</span>
+                    <p class="text-font text-lg text-gray-600">We develop a detailed project plan, including scope,
+                        timeline, and deliverables</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 my-2">
+                <div class="w-11/12 mx-auto flex rounded-md p-3 shadow-lg shadow-blue-100 border border-blue-900 flex-col">
+                    <span class="text-blue-900 text-xl my-2">3. Design/Development</span>
+                    <p class="text-font text-lg text-gray-600">Our team creates the software or design assets,
+                        incorporating your feedback along the way</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 my-2">
+                <div class="w-11/12 mx-auto flex rounded-md p-3 shadow-lg shadow-blue-100 border border-blue-900 flex-col">
+                    <span class="text-blue-900 text-xl my-2">4. Testing/Review</span>
+                    <p class="text-font text-lg text-gray-600">We rigorously test our work to ensure quality and
+                        functionality</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 my-2">
+                <div class="w-11/12 mx-auto flex rounded-md p-3 shadow-lg shadow-blue-100 border border-blue-900 flex-col">
+                    <span class="text-blue-900 text-xl my-2">5. Delivery/Implementation</span>
+                    <p class="text-font text-lg text-gray-600">We deliver the final product and provide ongoing support to
+                        ensure your success</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- partner with us --}}
+    <section class="mx-auto p-6 md:p-12 mt-12 bg-gradient-to-tl from-blue-50 to-blue-100">
+        <div class="w-full flex flex-col md:flex-row">
+            <div class="w-full md:w-1/3 my-2 p-4">
+                <i class="fa fa-handshake text-3xl md:text-5xl text-blue-900"></i>
+                <h3 class="text-3xl md:text-5xl text-blue-900 font-semibold">Partner With Us</h3>
+                <p class="italic text-gray-600 my-4 text-lg">Your Home For Smart Software solutions</p>
+            </div>
+            <div class="w-full md:w-2/3 my-2 flex flex-col md:flex-row flex-wrap text-font">
+                <div class="w-full md:w-1/2 my-2">
+                    <div
+                        class="w-11/12 mx-auto flex rounded-md p-3 bg-gradient-to-tr from-blue-50 to-blue-200 border border-blue-900 flex-col hover:scale-105 transition-transform duration-500">
+                        <i class="fa fa-puzzle-piece text-blue-900 m-2 text-xl"></i>
+                        <span class="text-font text-lg">Tailored software and design to meet your unique business
+                            needs</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 my-2">
+                    <div
+                        class="w-11/12 mx-auto flex rounded-md p-3 bg-gradient-to-tr from-blue-100 to-blue-200 border border-blue-900 flex-col hover:scale-105 transition-transform duration-500">
+                        <i class="fa fa-clock text-blue-900 m-2 text-xl"></i>
+                        <span class="text-font text-lg">On-time project delivery and ongoing support</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 my-2">
+                    <div
+                        class="w-11/12 mx-auto flex rounded-md p-3 bg-gradient-to-tr from-blue-100 to-blue-200 border border-blue-900 flex-col hover:scale-105 transition-transform duration-500">
+                        <i class="fa fa-users text-blue-900 m-2 text-xl"></i>
+                        <span class="text-font text-lg">We work closely with you to ensure your vision is realized</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 my-2">
+                    <div
+                        class="w-11/12 mx-auto flex rounded-md p-3 bg-gradient-to-tr from-blue-100 to-blue-200 border border-blue-900 flex-col hover:scale-105 transition-transform duration-500">
+                        <i class="fa fa-line-chart text-blue-900 m-2 text-xl"></i>
+                        <span class="text-font text-lg">Delivering solutions that drive measurable business growth</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="w-full md:w-10/12 mx-auto py-12">
+            <div class="w-11/12 md:w-8/12 mx-auto text-center my-2">
+                <h2 class="text-blue-900 font-semibold mb-4 uppercase tracking-wide text-lg md:text-xl">Ready to transform
+                    and bring impact to your business?</h2>
+                <p class="text-lg md:text-4xl font-semibold text-gray-700">Let's Discuss Your Project </p>
+            </div>
+            <div class="w-fit my-8 mx-auto">
+                <button
+                    class="py-3 px-4 bg-blue-950 hover:bg-blue-900 rounded-full font-semibold text-lg md:text-xl transition-colors duration-1000 text-white">
+                    Get In Touch
+                </button>
+            </div>
+        </div>
+    </section>
+@endsection

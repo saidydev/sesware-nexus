@@ -1,233 +1,133 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        @vite('resources/css/app.css')
-        <title>Laravel</title>
-        <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.css">
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=Roboto:400,500,600&display=swap" rel="stylesheet"/>
-        <link href="https://fonts.bunny.net/css?family=Merriweather:400,500,600&display=swap" rel="stylesheet"/>
-        {{-- <style>
-            p{
-                color: #c892f2;
-            }
-        </style> --}}
-    </head>
-    <body class="p-0 m-0 list-none">
-        {{-- HEADER/NAV BAR --}}
-        <section class="text-white w-full h-auto bg-cover bg-center bg-blue-200" style="background-image: linear-gradient(to right,rgba(175, 111, 238, 0.199),hsla(266, 89%, 11%, 0.944)),url('./images/KANYASI_66.jpg')">
-            <nav class="mx-0 px-6 py-2 lg:text-inherit flex justify-between lg:py-6 lg:mx-banner lg:flex lg:justify-between lg:gap-6 items-center">
-                <div class="h-10 w-1/4  lg:h-16 lg:w-1/5 bg-cover bg-center" style="background-image: url('./images/SIDE-01.png')">
-                </div>
-                <div class="lg:flex lg:justify-between lg:w-2/5 font-heading hidden">
-                    <a href="{{route('home')}}">
-                        <li>Home</li>
-                    </a>
+@extends('layouts.guest-layout')
+@section('content')
+    <div class="w-11/12 md:w-3/5 mx-auto">
+        <div class="my-8 text-center">
+            <h2 class="text-xl font-heading font-semibold tracking-wider text-blue-900 uppercase">
+                Contact Us
+            </h2>
+            <p class="text-2xl my-2 text-gray-700">Ready to transform
+                and bring impact to your business?</p>
 
-                    <a href="{{route('about')}}">
-                        <li>About Us</li>
-                    </a>
-
-                    <a href="{{route('service')}}">
-                        <li>Services</li>
-                    </a>
-
-                    <a href="{{route('product')}}">
-                        <li>Products</li>
-                    </a>
-
-                    <a href="{{route('contact')}}">
-                        <li>Contact us</li>
-                    </a>
-                </div>
-                <div class="lg:hidden text-white text-lg">
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-x" style="display: none"></i>
-                </div>
-            </nav>
-
-
-            <div class="flex flex-col gap-4 mx-4 mt-banner pb-10 lg:flex lg:flex-row lg:mx-banner lg:pl-10 lg:mt-banner lg:pb-14 items-center ">
-                <div class="flex flex-col gap-4 lg:w-4/5 text-center" style="margin: 5% auto">
-                    <h2 class="text-mobilehead lg:text-headimg font-headimg" data-aos="fade-up" data-aos-duration="3000">Get in Touch - Let's Build Something Amazing Together!</h2>
-                    <h2><hr class="w-6 h-1 lg:w-8 lg:h-2 bg-white border-none" style="margin: 0 auto"></h2>
-                    <p class="text-md font-heading" data-aos="fade-up" data-aos-duration="3000">Have a questions or need a custom solutions ? Our team is ready to assist you, contact us for advice,technical support.</p>
-                </div>
-                <div class="gap-4 lg:w-1/5 items-center" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="flex flex-row lg:flex-col gap-6 lg:w-fit lg:ml-auto text-lg text-white cursor-pointer">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-twitter"></i>
+            <div class="w-fit mx-auto flex flex-col md:flex-row md:items-center md:space-x-4 space-y-3 md:space-y-0 text-lg my-4">
+                <a href="" class="hover:text-slate-400">
+                    <div class="w-full flex items-center space-x-4">
+                        <i class="fa fa-envelope border border-gray-600 hover:bg-blue-900 rounded-full p-2"></i>
+                        <span>info@seswarenexus.com</span>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-hd px-4 py-top lg:px-banner lg:py-top font-content">
-            <div class="grid grid-cols-2 gap-3 md:grid md:grid-cols-4 lg:grid lg:grid-cols-7 lg:gap-4">
-                <div class="flex gap-2 lg:gap-2 items-center">
-                    <div class="flex flex-col gap-2">
-                        <h1 class="text-xl lg:text-2xl font-semibold text-white">10+</h1>
-                        <h2 class="text-lg font-content text-slate-400">Projects</h2>
+                </a>
+                <a href="" class="hover:text-slate-400">
+                    <div class="w-full flex items-center space-x-4">
+                        <i class="fa fa-phone border border-gray-600 hover:bg-blue-900 rounded-full p-2"></i>
+                        <span>0712345678</span>
                     </div>
-                </div>
-                <hr class="hidden lg:block lg:w-1 border-none lg:h-16 bg-slate-500 g:w-fit lg:ml-auto">
-                <div class="flex lg:gap-2 items-center">
-                    <div class="flex flex-col gap-2">
-                        <h1 class="text-xl lg:text-2xl font-semibold text-white">24/7</h1>
-                        <h2 class="text-lg font-content text-slate-400">Services</h2>
-                    </div>
-                </div>
-                <hr class="hidden lg:block lg:w-1 border-none lg:h-16 bg-slate-500 g:w-fit lg:ml-auto">
-                <div class="flex lg:gap-2 items-center">
-                    <div class="flex flex-col gap-2">
-                        <h1 class="text-xl lg:text-2xl font-semibold text-white">100 +</h1>
-                        <h2 class="text-lg font-content text-slate-400">Customers</h2>
-                    </div>
-                </div>
-                <hr class="hidden lg:block lg:w-1 border-none lg:h-16 bg-slate-500 g:w-fit lg:ml-auto">
-                <div class="flex lg:gap-2 items-center">
-                    <div class="flex flex-col gap-2">
-                        <h1 class="text-xl lg:text-2xl font-semibold text-white"> 3+</h1>
-                        <h2 class="text-lg font-content text-slate-400">Years Experience</h2>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section class="px-4 py-top lg:px-banner lg:py-top font-content">
-            <form action="{{ route('contact')}}" method="POST">
-                @csrf
-           <div class="flex flex-col gap-3 lg:gap-4">
-            <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-4">
-                <div class="flex flex-col gap-1">
-                    <label class="font-content">Name (required)</label>
-                    <input type="text" placeholder="Your name" required class="h-12 lg:h-12 bg-slate-200 text-black rounded-sm outline-none pl-2 lg:w-full" name="name" id="name">
-                </div>
-                <div class="flex flex-col gap-1">
-                    <label class="font-content">Company (required)</label>
-                    <input type="text"  placeholder="Your company name" required class="h-12 lg:h-12 bg-slate-200 text-black rounded-sm outline-none pl-2 lg:w-full" name="company" id="company">
-                </div>
-                <div class="flex flex-col gap-1">
-                    <label class="font-content">Email (required)</label>
-                    <input type="email"  placeholder="Your working email" required class="h-12 lg:h-12 bg-slate-200 text-black rounded-sm outline-none pl-2 lg:w-full" name="email" id="email">
-                </div>
-            </div>
-            <div class="grid-cols-1 gap-3 grid lg:grid-cols-3 lg:gap-4">
-                <div class="flex flex-col gap-1">
-                    <label class="font-content">phone (required)</label>
-                    <input type="text" placeholder="Your phone" class="h-12 lg:h-12 bg-slate-200 text-black rounded-sm outline-none pl-2 lg:w-full" name="phone" id="phone">
-                </div>
-                <div class="flex flex-col gap-1">
-                    <label class="font-content">subject (optional)</label>
-                    <input type="text"  placeholder="Subject" class="h-12 lg:h-12 bg-slate-200 text-black rounded-sm outline-none pl-2 lg:w-full" name="subject" id="subject">
-                </div>
-                <div class="flex flex-col gap-1">
-                    <label class="font-content">Choose a Budget (TZS)</label>
-                    <select class="h-12 lg:h-12 bg-slate-200 text-black rounded-sm outline-none pl-2 lg:w-full" name="budget" id="budget">
-                        <option value="less than 500k">Less than 500k</option>
-                        <option value="Over than 500k">Over than 500k</option>
-                        <option value="1M-above">1M - above</option>
-                    </select>
-                </div>
-            </div>
-            <div class="flex flex-col gap-2">
-                <label>Project details</label>
-                <textarea placeholder="Brief project details" class="h-36 lg:h-40 pt-2 bg-slate-200 text-black rounded-sm outline-none pl-2 lg:w-full" name="details" id="details"></textarea>
-            </div>
-            <button class="w-max p-3 rounded-sm lg:w-32 text-md font-content lg:p-2 lg:rounded-md text-white hover:bg-p" style="background-image: linear-gradient(to right,#9129f8d2,hsla(266, 89%, 11%, 0.944))">Get a Quote</button>
-           </div>
-        </form>
-        </section>
-
-        <section>
-            <div class="flex flex-col gap-3 lg:flex-row lg:gap-4">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7274.357151102437!2d37.31912114007699!3d-3.3030135583088223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1839df349756f46f%3A0x611a580d0cca73ed!2sMwenge%20Catholic%20University!5e0!3m2!1sen!2stz!4v1738235921416!5m2!1sen!2stz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full lg:w-1/2"></iframe>
-                <div class="hidden lg:grid lg:grid-cols-3 lg:gap-4 lg:w-1/2">
-                    <div class="flex flex-col lg:gap-3">
-                        <h3 class="text-hd font-semibold">Location</h3>
-                        <a href="">Tanzania</a>
-                        <a href="">Kilimanjaro,Tanzania</a>
-                    </div>
-                    <div class="flex flex-col lg:gap-3">
-                        <h3 class="text-hd font-semibold">Contacts</h3>
-                        <a href="">+255 612 345 678</a>
-                        <a href="">sesware@gmail.com</a>
-                    </div>
-                    <div class="flex flex-col lg:gap-3">
-                        <h3 class="text-hd font-semibold">Socials</h3>
-                        <a href="">
-                <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="">
-                <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="">
-                <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                        <a href="">
-                <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-
-        {{-- FOOTER --}}
-
-        <section class="bg-p py-top px-2 lg:px-banner font-content text-slate-300">
-            <div class="grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-4 ">
-                <div class="flex flex-col gap-2 lg:gap-3">
-                    <h3 class="text-white font-semibold">Company</h3>
-                    <a href="{{route('about')}}">About</a>
-                    <a href="{{route('about')}}">Team members</a>
-                    <a href="{{route('product')}}">Projects</a>
-                    <a href="{{route('home')}}">Investors</a>
-                </div>
-                <div class="flex flex-col gap-2 lg:gap-3">
-                    <h3 class="text-white font-semibold">Our Services</h3>
-                    <a href="{{route('service')}}">Home</a>
-                    <a href="{{route('service')}}">Web Development</a>
-                    <a href="{{route('service')}}">System Development</a>
-                    <a href="{{route('service')}}">SEO</a>
-                </div>
-                <div class="flex flex-col gap-2 lg:gap-3">
-                    <h3 class="text-white font-semibold">Quick Link</h3>
-                    <a href="{{route('contact')}}">Knowledge base</a>
-                    <a href="{{route('contact')}}">Hire an Expert</a>
-                    <a href="{{route('contact')}}">FAQ's</a>
-                    <a href="{{route('contact')}}">Contact</a>
-                </div>
-                <div class="flex flex-col gap-2 lg:gap-3">
-                    <h3 class="text-white font-semibold">Location</h3>
-                    <a href="{{route('contact')}}">Kilimanjaro</a>
-                    <a href="{{route('contact')}}">Tanzania</a>
-                    <a href="{{route('contact')}}">P.O.BOX 123</a>
-                    <a href="{{route('contact')}}">Lindi Street</a>
-                </div>
-            </div>
-        </section>
-        <div class="w-full flex items-centerbg-slate-300">
-            <div class="md:w-1/4 md:py-4 md:pl-4 md:flex gap-4 text-lg text-white md:bg-hd hidden md:block">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-            </div>
-            <div class="text-center mt-2 md:ml-auto">
-                <a href="#"><span>Copyrights&copy;2025. All rights reserved | Privacy policy | Terms &
-                        conditions</span></a>
+                </a>
             </div>
         </div>
-    </body>
-</html>
+    </div>
+
+    <section class="w-11/12 mx-auto flex flex-col md:flex-row gap-4 my-4 py-12">
+        <div class="w-full md:w-1/2 p-4 bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg">
+            <h3 class="my-2 text-blue-900 text-2xl font-semibold text-font">Tell us about your project</h3>
+            <form action="" class="flex flex-col space-y-3">
+                <div class="flex flex-col space-y-2 w-full md:w-10/12">
+                    <label for="name" class="text-lg text-gray-600">Full Name:</label>
+                    <input type="text" class="w-full p-2 border border-blue-300 rounded-md bg-blue-50">
+                </div>
+                <div class="flex flex-col space-y-2 w-full md:w-10/12">
+                    <label for="email" class="text-lg text-gray-600">Email:</label>
+                    <input type="email" class="w-full p-2 border border-blue-300 rounded-md bg-blue-50">
+                </div>
+                <div class="flex flex-col space-y-2 w-full md:w-10/12">
+                    <label for="company" class="text-lg text-gray-600">Company:</label>
+                    <input type="text" class="w-full p-2 border border-blue-300 rounded-md bg-blue-50">
+                </div>
+                <div class="flex flex-col space-y-2 w-full md:w-10/12">
+                    <label for="description" class="text-lg text-gray-600">Project Description (Optional):</label>
+                   <textarea name="description" rows="7" class="w-full p-2 border border-blue-300 rounded-md bg-blue-50"></textarea>
+                </div>
+
+                <div class="w-full py-4">
+                    <button class="bg-blue-600 text-white py-2 px-5 rounded-md font-semibold text-font cursor-pointer hover:bg-blue-700">Send</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="w-full md:w-1/2 p-4 rounded-lg">
+            <h3 class="my-2 text-blue-900 text-2xl font-semibold text-font">Frequently Asked Questions</h3>
+            <div class="flex flex-col space-y-2 text-font my-2">
+                <span class="text-lg text-gray-700 font-semibold">What does Sesware Nexus Do?</span>
+                <p class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem qui atque veritatis facilis sint sit, iure reprehenderit corporis, doloremque blanditiis laudantium itaque. Iusto consequatur necessitatibus omnis consectetur at officia. Est.</p>
+            </div>
+            <div class="flex flex-col space-y-2 text-font my-2">
+                <span class="text-lg text-gray-700 font-semibold">What Services do Sesware nexus offer?</span>
+                <p class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem qui atque veritatis facilis sint sit, iure reprehenderit corporis, doloremque blanditiis laudantium itaque. Iusto consequatur necessitatibus omnis consectetur at officia. Est.</p>
+            </div>
+            <div class="flex flex-col space-y-2 text-font my-2">
+                <span class="text-lg text-gray-700 font-semibold">What are your pricings?</span>
+                <p class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem qui atque veritatis facilis sint sit, iure reprehenderit corporis, doloremque blanditiis laudantium itaque. Iusto consequatur necessitatibus omnis consectetur at officia. Est.</p>
+            </div>
+            <div class="flex flex-col space-y-2 text-font my-2">
+                <span class="text-lg text-gray-700 font-semibold">What are your pricings?</span>
+                <p class="text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem qui atque veritatis facilis sint sit, iure reprehenderit corporis, doloremque blanditiis laudantium itaque. Iusto consequatur necessitatibus omnis consectetur at officia. Est.</p>
+            </div>
+        </div>
+    </section>
+
+     {{-- partner with us --}}
+     <section class="mx-auto p-6 md:p-12 mt-12 bg-gradient-to-tl from-blue-50 to-blue-100">
+        <div class="w-full flex flex-col md:flex-row">
+            <div class="w-full md:w-1/3 my-2 p-4">
+                <i class="fa fa-handshake text-3xl md:text-5xl text-blue-900"></i>
+                <h3 class="text-3xl md:text-5xl text-blue-900 font-semibold">Partner With Us</h3>
+                <p class="italic text-gray-600 my-4 text-lg">Your Home For Smart Software solutions</p>
+            </div>
+            <div class="w-full md:w-2/3 my-2 flex flex-col md:flex-row flex-wrap text-font">
+                <div class="w-full md:w-1/2 my-2">
+                    <div
+                        class="w-11/12 mx-auto flex rounded-md p-3 bg-gradient-to-tr from-blue-50 to-blue-200 border border-blue-900 flex-col hover:scale-105 transition-transform duration-500">
+                        <i class="fa fa-puzzle-piece text-blue-900 m-2 text-xl"></i>
+                        <span class="text-font text-lg">Tailored software and design to meet your unique business
+                            needs</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 my-2">
+                    <div
+                        class="w-11/12 mx-auto flex rounded-md p-3 bg-gradient-to-tr from-blue-100 to-blue-200 border border-blue-900 flex-col hover:scale-105 transition-transform duration-500">
+                        <i class="fa fa-clock text-blue-900 m-2 text-xl"></i>
+                        <span class="text-font text-lg">On-time project delivery and ongoing support</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 my-2">
+                    <div
+                        class="w-11/12 mx-auto flex rounded-md p-3 bg-gradient-to-tr from-blue-100 to-blue-200 border border-blue-900 flex-col hover:scale-105 transition-transform duration-500">
+                        <i class="fa fa-users text-blue-900 m-2 text-xl"></i>
+                        <span class="text-font text-lg">We work closely with you to ensure your vision is realized</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 my-2">
+                    <div
+                        class="w-11/12 mx-auto flex rounded-md p-3 bg-gradient-to-tr from-blue-100 to-blue-200 border border-blue-900 flex-col hover:scale-105 transition-transform duration-500">
+                        <i class="fa fa-line-chart text-blue-900 m-2 text-xl"></i>
+                        <span class="text-font text-lg">Delivering solutions that drive measurable business growth</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="w-full md:w-10/12 mx-auto py-12">
+            <div class="w-11/12 md:w-8/12 mx-auto text-center my-2">
+                <h2 class="text-blue-900 font-semibold mb-4 uppercase tracking-wide text-lg md:text-xl">Ready to transform
+                    and bring impact to your business?</h2>
+                <p class="text-lg md:text-4xl font-semibold text-gray-700">Learn more about us and what we do</p>
+            </div>
+            <div class="w-fit my-8 mx-auto">
+                <a href="{{route('service')}}">
+                    <button
+                        class="py-3 px-4 bg-blue-950 hover:bg-blue-900 rounded-full font-semibold text-lg md:text-xl transition-colors duration-1000 text-white">
+                        our services
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+@endsection
