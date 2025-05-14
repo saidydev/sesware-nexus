@@ -13,18 +13,28 @@
 
     <section class="w-full my-4 px-2 py-12">
         <div class="grid grid-cols-1 gap-3 md:grid md:grid-cols-2 md:gap-4 lg:grid lg:gap-4 text-md">
-            <div class="p-2 bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg my-4 hover:shadow-md shadow-blue-200">
-                <div class="flex flex-col gap-2">
-                    <div class="w-full h-96 overflow-hidden">
+            <div
+                class="p-4 bg-gradient-to-br from-blue-200 to-blue-100 rounded-lg my-4 hover:shadow-lg shadow-blue-300 transition-all duration-300">
+                <div class="flex flex-col gap-3">
+                    <div class="w-full h-80 overflow-hidden rounded-lg shadow-md">
                         <img src="{{ asset('images/KANYASI_66.jpg') }}" alt="design mockup"
-                            class="w-full h-full object-cover">
+                            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105">
                     </div>
-                    <h2 class="text-lg tracking-wide text-blue-900 font-semibold text-center">School Website</h2>
-                    <p class="text-gray-600 text-center">Designing, developing, and deploying custom web-based
-                        software to automate business processes, manage data, and facilitate online transactions.
+                    <h2
+                        class="text-xl tracking-wide text-blue-900 font-bold text-center hover:text-blue-700 transition-colors duration-200">
+                        School Website</h2>
+                    <p class="text-gray-700 text-center text-sm md:text-base">
+                        Designing, developing, and deploying custom web-based software to automate business processes,
+                        manage data, and facilitate online transactions.
                     </p>
+                    <div class="flex justify-center mt-4">
+                        <a href="#"
+                            class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-200">Learn
+                            More</a>
+                    </div>
                 </div>
             </div>
+
             <div class="p-2 bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg my-4 hover:shadow-md shadow-blue-200">
                 <div class="flex flex-col gap-2">
                     <div class="w-full h-96 overflow-hidden">
@@ -105,17 +115,15 @@
         </div>
     </section>
     {{-- call to action --}}
-    <section>
-        <div class="w-full md:w-10/12 mx-auto py-12">
-            <div class="w-11/12 md:w-8/12 mx-auto text-center my-2">
-                <h2 class="text-orange-400 font-bold mb-4 uppercase tracking-wide text-lg md:text-xl">Ready to
-                    transform
-                    and bring impact to your business?</h2>
-                <p class="text-lg md:text-4xl font-semibold text-gray-700">Let's Discuss Your Project </p>
+    <section class="bg-gray-100">
+        <div class="w-full md:w-10/12 mx-auto py-16">
+            <div class="w-11/12 md:w-8/12 mx-auto text-center my-4">
+                <h2 class="text-orange-500 font-bold mb-4 uppercase tracking-wide text-lg md:text-xl">Ready to Transform and
+                    Bring Impact to Your Business?</h2>
+                <p class="text-lg md:text-5xl font-extrabold text-gray-800">Let's Discuss Your Project</p>
             </div>
             <div class="w-fit my-8 mx-auto">
-                <button
-                    class="py-3 px-4 bg-blue-950 hover:bg-blue-900 rounded-full font-semibold text-lg md:text-xl transition-colors duration-1000 text-white">
+                <button class="py-4 px-6 bg-blue-900 text-white rounded-full font-semibold text-lg md:text-xl shadow-lg">
                     Get In Touch
                 </button>
             </div>
