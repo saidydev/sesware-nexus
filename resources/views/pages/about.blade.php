@@ -54,7 +54,7 @@
         <div class="w-11/12 md:w-8/12 my-4">
             <h4 class="text-lg md:text-xl font-semibold text-gray-700 mb-4">Our Pillars</h4>
             <div class="text-gray-700 flex items-center flex-wrap gap-2">
-                <span class="rounded-full py-1 px-3 border border-gray-500 font-semibold">Innovation</span>
+                <span class="rounded-full py-1 px-3 border bg-orange-400 border-gray-500 font-semibold">Innovation</span>
                 <span class="rounded-full py-1 px-3 border border-gray-500 font-semibold">Quality</span>
                 <span class="rounded-full py-1 px-3 border border-gray-500 font-semibold">Collaboration</span>
                 <span class="rounded-full py-1 px-3 border border-gray-500 font-semibold">Integrity</span>
