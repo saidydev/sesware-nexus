@@ -22,7 +22,7 @@
                 <div class="w-fit mx-auto my-4 py-4 ">
                     <a href="#">
                         <button
-                            class="py-3 px-4 bg-blue-950 hover:bg-blue-900 rounded-full font-semibold text-xl transition-colors duration-1000 text-white">
+                            class="py-3 px-4 bg-orange-500 hover:bg-orange-600 rounded-full font-semibold text-xl transition-colors duration-1000 text-white">
                             Explore Our Services
                         </button>
                     </a>
@@ -63,7 +63,7 @@
                 <span
                     class="rounded-full py-1 px-3 border bg-gradient-to-r from-orange-600 to-orange-500 text-white border-orange-700 font-semibold">Integrity</span>
                 <span
-                    class="rounded-full py-1 px-3 border bg-gradient-to-r from-orange-600 to-orange-300 text-white border-orange-700 font-semibold">Client
+                    class="rounded-full py-1 px-3 border bg-gradient-to-r from-orange-600 to-orange-500 text-white border-orange-700 font-semibold">Client
                     Focus</span>
             </div>
         </div>

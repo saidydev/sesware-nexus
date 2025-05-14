@@ -8,6 +8,14 @@
     <title>SESWARE</title>
 
     @include('partials.links')
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+    </style>
 </head>
 
 <body class="p-0 m-0 list-none">
