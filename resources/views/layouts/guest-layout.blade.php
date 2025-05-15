@@ -8,6 +8,14 @@
     <title>SESWARE</title>
 
     @include('partials.links')
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+    </style>
 </head>
 
 <body class="p-0 m-0 list-none">
@@ -47,7 +55,6 @@
     @yield('content')
 
     {{-- FOOTER --}}
-
     <section class="w-full p-6 lg:p-12 font-text text-slate-300 bg-gradient-to-r from-blue-950 to-blue-800">
         <div class="flex flex-col lg:flex-row justify-between gap-3">
             <div class="w-full lg:w-2/6 flex flex-col p-4">
@@ -77,7 +84,10 @@
                 <div class="flex flex-col space-y-4 text-lg">
                     <a href="" class="hover:text-slate-400">
                         <div class="w-full flex items-center space-x-4">
-                            <i class="fa fa-envelope border border-gray-100 hover:bg-blue-900 rounded-full p-2"></i>
+                            <a href="#"
+                                class="w-10 h-10 flex items-center justify-center bg-blue-900 rounded-full border border-gray-100">
+                                <i class="fa fa-envelope text-white"></i>
+                            </a>
                             <span>info@seswarenexus.com</span>
                         </div>
                     </a>
@@ -88,14 +98,19 @@
                         </div>
                     </a>
                     <div class="w-full flex items-center space-x-6">
-                        <a href="">
-                            <i class="fab fa-x border border-gray-100 hover:bg-blue-900 rounded-full py-3 px-4"></i>
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center bg-blue-900 rounded-full border border-gray-100">
+                            <i class="fa-brands fa-x-twitter text-white text-lg"></i>
                         </a>
-                        <a href="">
-                            <i class="fab fa-instagram border border-gray-100 hover:bg-blue-900 rounded-full p-3"></i>
+
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center bg-blue-900 rounded-full border border-gray-100">
+                            <i class="fa-brands fa-instagram text-white text-lg"></i>
                         </a>
-                        <a href="">
-                            <i class="fab fa-linkedin border border-gray-100 hover:bg-blue-900 rounded-full p-3"></i>
+
+                        <a href="#"
+                            class="w-10 h-10 flex items-center justify-center bg-blue-900 rounded-full border border-gray-100">
+                            <i class="fa-brands fa-linkedin-in text-white text-lg"></i>
                         </a>
                     </div>
                 </div>

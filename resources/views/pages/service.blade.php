@@ -1,17 +1,17 @@
 @extends('layouts.guest-layout')
 @section('content')
-            <div class="w-11/12 md:w-3/5 mx-auto">
-                <div class="my-8 text-center">
-                    <h2 class="text-xl font-heading font-semibold tracking-wider text-blue-900 uppercase">
-                        Our Services
-                    </h2>
-                    <p class="text-2xl my-2 text-gray-700">Solutions That Drive Your Business Forward</p>
-                    <p class="text-lg text-gray-600 mt-4">Sesware Nexus provides a comprehensive suite of software
-                        development and graphic design services to empower businesses in Tanzania. We combine technical
-                        expertise with creative vision to deliver solutions that meet your specific needs and drive
-                        measurable results</p>
-                </div>
-            </div>
+    <div class="w-11/12 md:w-3/5 mx-auto">
+        <div class="my-8 text-center">
+            <h2 class="text-xl font-heading font-semibold tracking-wider text-blue-900 uppercase">
+                Our Services
+            </h2>
+            <p class="text-2xl my-2 text-gray-700">Solutions That Drive Your Business Forward</p>
+            <p class="text-lg text-gray-600 mt-4">Sesware Nexus provides a comprehensive suite of software
+                development and graphic design services to empower businesses in Tanzania. We combine technical
+                expertise with creative vision to deliver solutions that meet your specific needs and drive
+                measurable results</p>
+        </div>
+    </div>
 
     {{-- software dev --}}
     <section class="w-full bg-gradient-to-r from-blue-50 to-blue-100 px-4 py-16">
@@ -21,7 +21,7 @@
             insights.</p>
 
         <div
-            class="w-full md:w-11/12 mx-auto px-8 py-12 bg-gradient-to-r from-blue-950 to-blue-900 rounded-lg my-8 text-blue-100">
+            class="w-full md:w-11/12 mx-auto px-8 py-12 bg-gradient-to-tr from-blue-950 to-blue-800 rounded-lg my-8 text-blue-100">
             <div class="flex flex-col md:flex-row gap-3">
                 <div class="w-full md:w-1/2">
                     <h4 class="text-blue-200 text-2xl font-semibold mb-4">Web Application Development</h4>
@@ -42,26 +42,35 @@
                     <div class="w-full flex flex-wrap justify-center items-center">
                         <div class="w-1/2 md:w-1/4 my-2">
                             <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
-                                <i class="fab fa-react text-xl"></i>
+                                <div class="w-10 h-10 rounded-full bg-[#20232a] shadow-lg flex justify-center items-center">
+                                    <i class="fab fa-react text-[#61dafb] text-2xl animate-spin-slow"></i>
+                                </div>
+
                                 <h2 class="tracking-wide font-semibold">React</h2>
                             </div>
                         </div>
                         <div class="w-1/2 md:w-1/4 my-2">
                             <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
-                                <i class="fab fa-node-js text-xl"></i>
+                                <div class="w-10 h-10 rounded-full bg-[#3C873A] shadow-lg flex justify-center items-center">
+                                    <i class="fab fa-node-js text-white text-2xl"></i>
+                                </div>
                                 <h2 class="tracking-wide font-semibold">Node.js</h2>
                             </div>
                         </div>
                         <div class="w-1/2 md:w-1/4 my-2">
                             <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
-                                <i class="fab fa-laravel text-xl"></i>
+                                <div class="w-10 h-10 rounded-full bg-[#FF2D20] shadow-lg flex justify-center items-center">
+                                    <i class="fab fa-laravel text-white text-xl"></i>
+                                </div>
                                 <h2 class="tracking-wide font-semibold">Laravel</h2>
                             </div>
                         </div>
                         <div class="w-1/2 md:w-1/4 my-2">
                             <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
-                                <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
-                                    class="w-8 h-8" alt="Tailwind CSS" />
+                                <div class="w-10 h-10 rounded-full bg-white shadow-lg flex justify-center items-center">
+                                    <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                                        alt="Tailwind CSS" class="w-6 h-6">
+                                </div>
                                 <h2 class="tracking-wide font-semibold">Tailwind</h2>
                             </div>
                         </div>
@@ -73,28 +82,41 @@
                         </div>
                         <div class="w-1/2 md:w-1/4 my-2">
                             <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
-                                <img src="{{ asset('images/mongodb-4.webp') }}" alt="" class="w-8 h-8">
+                                <div class="w-10 h-10 rounded-full bg-[#47A248] shadow-lg flex justify-center items-center">
+                                    <i class="fas fa-leaf text-white text-xl"></i>
+                                </div>
                                 <h2 class="tracking-wide font-semibold">MongoDB</h2>
                             </div>
                         </div>
                         <div class="w-1/2 md:w-1/4 my-2">
                             <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
-                                <img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" alt="MySQL"
-                                    class="w-8 h-8">
+                                <div class="w-10 h-10 rounded-full bg-white shadow-lg flex justify-center items-center">
+                                    <img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" alt="MySQL"
+                                        class="w-6 h-6">
+                                </div>
                                 <h2 class="tracking-wide font-semibold">mySQL</h2>
                             </div>
                         </div>
                     </div>
 
                     <div class="w-full m-4 py-4">
-                        <div class="text-blue-100 flex items-center flex-wrap gap-2">
-                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">User-friendly
-                                interfaces</span>
-                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Database
-                                integration</span>
-                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">API development</span>
-                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Responsive
-                                design</span>
+                        <div class="flex items-center flex-wrap gap-3">
+                            <span
+                                class="rounded-full py-1.5 px-4 bg-orange-700 text-white font-medium shadow hover:bg-orange-800 transition-colors duration-300">
+                                User-friendly interfaces
+                            </span>
+                            <span
+                                class="rounded-full py-1.5 px-4 bg-orange-700 text-white font-medium shadow hover:bg-orange-800 transition-colors duration-300">
+                                Database integration
+                            </span>
+                            <span
+                                class="rounded-full py-1.5 px-4 bg-orange-700 text-white font-medium shadow hover:bg-orange-800 transition-colors duration-300">
+                                API development
+                            </span>
+                            <span
+                                class="rounded-full py-1.5 px-4 bg-orange-700 text-white font-medium shadow hover:bg-orange-800 transition-colors duration-300">
+                                Responsive design
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -122,7 +144,8 @@
                     <div class="w-full flex flex-wrap justify-center items-center">
                         <div class="w-1/2 md:w-1/4 my-2">
                             <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
-                                <i class="fab fa-react text-xl"></i>
+                                <img src="https://www.vectorlogo.zone/logos/adobe/adobe-icon.svg" class="w-8 h-8"
+                                    alt="Adobe" />
                                 <h2 class="tracking-wide font-semibold">React Native</h2>
                             </div>
                         </div>
@@ -150,14 +173,22 @@
 
                     <div class="w-full m-4 py-4">
                         <div class="text-blue-100 flex items-center flex-wrap gap-2">
-                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Cross-platform
-                                development</span>
-                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">User-friendly
-                                interfaces</span>
-                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Push
-                                notifications</span>
-                            <span class="rounded-full py-1 px-3 border border-blue-100 font-semibold">Integration with
-                                device features</span>
+                            <span
+                                class="rounded-full py-1.5 px-4 bg-orange-700 text-white font-medium shadow hover:bg-orange-800 transition-colors duration-300">
+                                Cross-platform Development
+                            </span>
+                            <span
+                                class="rounded-full py-1.5 px-4 bg-orange-700 text-white font-medium shadow hover:bg-orange-800 transition-colors duration-300">
+                                User-friendly interfaces
+                            </span>
+                            <span
+                                class="rounded-full py-1.5 px-4 bg-orange-700 text-white font-medium shadow hover:bg-orange-800 transition-colors duration-300">
+                                Push notifications
+                            </span>
+                            <span
+                                class="rounded-full py-1.5 px-4 bg-orange-700 text-white font-medium shadow hover:bg-orange-800 transition-colors duration-300">
+                                Integration with device features
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -195,8 +226,12 @@
                     <div class="w-full flex flex-wrap justify-center items-center">
                         <div class="w-1/2 md:w-1/4 my-2">
                             <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
-                                <img src="https://www.vectorlogo.zone/logos/adobe/adobe-icon.svg" class="w-8 h-8"
-                                    alt="Adobe" />
+                                <div
+                                    class="w-10 h-10 rounded-full bg-[#FF0000] shadow-lg flex justify-center items-center">
+                                    <img src="https://www.vectorlogo.zone/logos/adobe/adobe-icon.svg" alt="Adobe"
+                                        class="w-6 h-6">
+                                </div>
+
                                 <h2 class="tracking-wide font-semibold">Adobe</h2>
                             </div>
                         </div>
@@ -223,100 +258,145 @@
     </section>
 
     {{-- approach --}}
-    <section class="w-full px-4 py-16">
-        <h3 class="text-blue-900 text-lg text-center font-semibold">How We Work</h3>
-        <p class="text-lg text-gray-600 text-center my-2 w-10/12 mx-auto">We follow a collaborative and iterative approach
-            to ensure that we deliver solutions that meet your needs and exceed your expectations.</p>
+    <section class="w-full px-4 py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-3xl md:text-4xl text-center font-bold text-blue-900 mb-4">How We Work</h3>
+            <p class="text-lg md:text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                We follow a collaborative and iterative approach to ensure we deliver solutions that meet your needs and
+                exceed your expectations.
+            </p>
 
-        <div class="w-full my-2 flex flex-col md:flex-row flex-wrap text-font">
-            <div class="w-full md:w-1/3 my-2">
-                <div class="w-11/12 mx-auto flex rounded-md p-3 shadow-lg shadow-blue-100 border border-blue-900 flex-col">
-                    <span class="text-blue-900 text-xl my-2">1. Consultation</span>
-                    <p class="text-font text-lg text-gray-600">We begin by understanding your business goals, requirements,
-                        and challenges</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div
+                    class="group p-6 rounded-2xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-orange-100 to-white">
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-briefcase text-orange-600 text-md"></i>
+                        <div>
+                            <span class="text-lg md:text-lg font-semibold text-orange-800 mb-2 block">1.
+                                Consultation</span>
+                            <p class="text-gray-700 text-base md:text-md">We begin by understanding your business goals,
+                                requirements, and challenges.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="w-full md:w-1/3 my-2">
-                <div class="w-11/12 mx-auto flex rounded-md p-3 shadow-lg shadow-blue-100 border border-blue-900 flex-col">
-                    <span class="text-blue-900 text-xl my-2">2. Planning/Discovery</span>
-                    <p class="text-font text-lg text-gray-600">We develop a detailed project plan, including scope,
-                        timeline, and deliverables</p>
+
+                <!-- Card 2 -->
+                <div
+                    class="group bg-white p-6 rounded-2xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-orange-50 to-white">
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-file-contract text-orange-600 text-md"></i>
+                        <div>
+                            <span class="text-lg md:text-lg font-semibold text-orange-800 mb-2 block">2.
+                                Planning/Discovery</span>
+                            <p class="text-gray-700 text-base md:text-md">We develop a detailed project plan, including
+                                scope, timeline, and deliverables.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="w-full md:w-1/3 my-2">
-                <div class="w-11/12 mx-auto flex rounded-md p-3 shadow-lg shadow-blue-100 border border-blue-900 flex-col">
-                    <span class="text-blue-900 text-xl my-2">3. Design/Development</span>
-                    <p class="text-font text-lg text-gray-600">Our team creates the software or design assets,
-                        incorporating your feedback along the way</p>
+
+                <!-- Card 3 -->
+                <div
+                    class="group p-6 rounded-2xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-orange-100 to-white">
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-sliders-h text-orange-600 text-md"></i>
+                        <div>
+                            <span class="text-lg md:text-lg font-semibold text-orange-800 mb-2 block">3.
+                                Design/Development</span>
+                            <p class="text-gray-700 text-base md:text-md">Our team creates the software or design assets,
+                                incorporating your feedback along the way.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="w-full md:w-1/3 my-2">
-                <div class="w-11/12 mx-auto flex rounded-md p-3 shadow-lg shadow-blue-100 border border-blue-900 flex-col">
-                    <span class="text-blue-900 text-xl my-2">4. Testing/Review</span>
-                    <p class="text-font text-lg text-gray-600">We rigorously test our work to ensure quality and
-                        functionality</p>
+
+                <!-- Card 4 -->
+                <div
+                    class="group bg-white p-6 rounded-2xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-orange-50 to-white">
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-check-circle text-orange-600 text-md"></i>
+                        <div>
+                            <span class="text-lg md:text-lg font-semibold text-orange-800 mb-2 block">4.
+                                Testing/Review</span>
+                            <p class="text-gray-700 text-base md:text-md">We rigorously test our work to ensure quality and
+                                functionality.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="w-full md:w-1/3 my-2">
-                <div class="w-11/12 mx-auto flex rounded-md p-3 shadow-lg shadow-blue-100 border border-blue-900 flex-col">
-                    <span class="text-blue-900 text-xl my-2">5. Delivery/Implementation</span>
-                    <p class="text-font text-lg text-gray-600">We deliver the final product and provide ongoing support to
-                        ensure your success</p>
+
+                <!-- Card 5 -->
+                <div
+                    class="group bg-white p-6 rounded-2xl shadow-lg border border-blue-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-orange-100 to-white">
+                    <div class="flex items-start space-x-4">
+                        <i class="fas fa-bolt text-orange-600 text-md"></i>
+                        <div>
+                            <span class="text-lg md:text-lg font-semibold text-orange-800 mb-2 block">5.
+                                Delivery/Implementation</span>
+                            <p class="text-gray-700 text-base md:text-md">We deliver the final product and provide ongoing
+                                support to ensure your success.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    {{-- partner with us --}}
-    <section class="mx-auto p-6 md:p-12 mt-12 bg-gradient-to-tl from-blue-50 to-blue-100">
-        <div class="w-full flex flex-col md:flex-row">
-            <div class="w-full md:w-1/3 my-2 p-4">
-                <i class="fa fa-handshake text-3xl md:text-5xl text-blue-900"></i>
-                <h3 class="text-3xl md:text-5xl text-blue-900 font-semibold">Partner With Us</h3>
-                <p class="italic text-gray-600 my-4 text-lg">Your Home For Smart Software solutions</p>
-            </div>
-            <div class="w-full md:w-2/3 my-2 flex flex-col md:flex-row flex-wrap text-font">
-                <div class="w-full md:w-1/2 my-2">
-                    <div
-                        class="w-11/12 mx-auto flex rounded-md p-3 bg-gradient-to-tr from-blue-50 to-blue-200 border border-blue-900 flex-col hover:scale-105 transition-transform duration-500">
-                        <i class="fa fa-puzzle-piece text-blue-900 m-2 text-xl"></i>
-                        <span class="text-font text-lg">Tailored software and design to meet your unique business
-                            needs</span>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2 my-2">
-                    <div
-                        class="w-11/12 mx-auto flex rounded-md p-3 bg-gradient-to-tr from-blue-100 to-blue-200 border border-blue-900 flex-col hover:scale-105 transition-transform duration-500">
-                        <i class="fa fa-clock text-blue-900 m-2 text-xl"></i>
-                        <span class="text-font text-lg">On-time project delivery and ongoing support</span>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2 my-2">
-                    <div
-                        class="w-11/12 mx-auto flex rounded-md p-3 bg-gradient-to-tr from-blue-100 to-blue-200 border border-blue-900 flex-col hover:scale-105 transition-transform duration-500">
-                        <i class="fa fa-users text-blue-900 m-2 text-xl"></i>
-                        <span class="text-font text-lg">We work closely with you to ensure your vision is realized</span>
-                    </div>
-                </div>
-                <div class="w-full md:w-1/2 my-2">
-                    <div
-                        class="w-11/12 mx-auto flex rounded-md p-3 bg-gradient-to-tr from-blue-100 to-blue-200 border border-blue-900 flex-col hover:scale-105 transition-transform duration-500">
-                        <i class="fa fa-line-chart text-blue-900 m-2 text-xl"></i>
-                        <span class="text-font text-lg">Delivering solutions that drive measurable business growth</span>
-                    </div>
-                </div>
+    {{-- Partner Action --}}
+    <section
+        class="mx-auto p-6 md:p-12 flex flex-col md:flex-row my-12 bg-gradient-to-tr from-blue-900 to-blue-950 rounded-sm shadow-2xl text-white">
+        <div class="w-full md:w-1/3 my-4 p-4 space-y-6">
+            <i class="fa fa-handshake text-4xl md:text-6xl text-orange-400"></i>
+            <h3 class="text-4xl md:text-5xl font-bold leading-tight">Partner With Us</h3>
 
+            <div class="w-fit">
+                <button
+                    class="py-3 px-6 bg-orange-600 hover:bg-orange-700 text-white rounded-full text-lg md:text-xl font-semibold transition-all duration-500 shadow-lg hover:scale-105">
+                    Get In Touch
+                </button>
             </div>
         </div>
-        <div class="w-full md:w-10/12 mx-auto py-12">
-            <div class="w-11/12 md:w-8/12 mx-auto text-center my-2">
-                <h2 class="text-blue-900 font-semibold mb-4 uppercase tracking-wide text-lg md:text-xl">Ready to transform
-                    and bring impact to your business?</h2>
-                <p class="text-lg md:text-4xl font-semibold text-gray-700">Let's Discuss Your Project </p>
+
+        <div class="w-full md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 md:mt-0">
+            <div
+                class="flex items-start space-x-4 bg-white bg-opacity-10 border border-orange-500 p-4 rounded-xl shadow-md hover:scale-105 transition-transform duration-500">
+                <i class="fa fa-puzzle-piece text-orange-400 text-2xl"></i>
+                <span class="text-white text-base md:text-lg font-medium">
+                    Tailored software and design to meet your unique business needs
+                </span>
+            </div>
+            <div
+                class="flex items-start space-x-4 bg-white bg-opacity-10 border border-orange-500 p-4 rounded-xl shadow-md hover:scale-105 transition-transform duration-500">
+                <i class="fa fa-clock text-orange-400 text-2xl"></i>
+                <span class="text-white text-base md:text-lg font-medium">
+                    On-time project delivery and ongoing support
+                </span>
+            </div>
+            <div
+                class="flex items-start space-x-4 bg-white bg-opacity-10 border border-orange-500 p-4 rounded-xl shadow-md hover:scale-105 transition-transform duration-500">
+                <i class="fa fa-users text-orange-400 text-2xl"></i>
+                <span class="text-white text-base md:text-lg font-medium">
+                    We work closely with you to ensure your vision is realized
+                </span>
+            </div>
+            <div
+                class="flex items-start space-x-4 bg-white bg-opacity-10 border border-orange-500 p-4 rounded-xl shadow-md hover:scale-105 transition-transform duration-500">
+                <i class="fa fa-line-chart text-orange-400 text-2xl"></i>
+                <span class="text-white text-base md:text-lg font-medium">
+                    Delivering solutions that drive measurable business growth
+                </span>
+            </div>
+        </div>
+    </section>
+    {{-- call to action --}}
+    <section class="bg-gray-100">
+        <div class="w-full md:w-10/12 mx-auto py-16">
+            <div class="w-11/12 md:w-8/12 mx-auto text-center my-4">
+                <h2 class="text-orange-500 font-bold mb-4 uppercase tracking-wide text-lg md:text-xl">Ready to Transform
+                    and
+                    Bring Impact to Your Business?</h2>
+                <p class="text-lg md:text-5xl font-extrabold text-gray-800">Let's Discuss Your Project</p>
             </div>
             <div class="w-fit my-8 mx-auto">
-                <button
-                    class="py-3 px-4 bg-blue-950 hover:bg-blue-900 rounded-full font-semibold text-lg md:text-xl transition-colors duration-1000 text-white">
+                <button class="py-4 px-6 bg-blue-900 text-white rounded-full font-semibold text-lg md:text-xl shadow-lg">
                     Get In Touch
                 </button>
             </div>
