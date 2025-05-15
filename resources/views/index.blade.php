@@ -156,7 +156,7 @@
     <section class="py-8 md:py-16 bg-white-50">
         <div class="w-11/12 md:w-10/12 mx-auto flex flex-col gap-4">
             <div class="w-11/12 md:w-8/12 mx-auto text-center my-2">
-                <h2 class="text-blue-900 font-semibold mb-4 uppercase tracking-wide">Featured Projects</h2>
+                <h2 class="text-orange-600 font-semibold mb-4 uppercase tracking-wide">Featured Projects</h2>
                 <p class="text-lg md:text-2xl font-semibold text-gray-700">Explore some of our best works that brought
                     impact to businesses</p>
             </div>
@@ -165,18 +165,16 @@
                     class="p-6 bg-gradient-to-br from-orange-200 to-orange-50 rounded-2xl hover:shadow-md shadow-blue-200 border-2 hover:border-orange-400 transition transform ease-in-out duration-500">
                     <div class="flex flex-col gap-2">
                         <div class="w-full h-52 overflow-hidden">
-                            <img src="{{ asset('images/KANYASI_66.jpg') }}" alt="design mockup"
+                            <img src="{{ asset('images/Scolastica-Project.PNG') }}" alt="design mockup"
                                 class="w-full h-full object-cover">
                         </div>
                         <h2 class="text-lg tracking-wide text-blue-900 font-semibold">School Website</h2>
-                        <p class="text-gray-600 text-justify">Designing, developing, and deploying custom web-based
-                            software to automate business processes, manage data, and facilitate online transactions.
+                        <p class="text-gray-600 text-justify">A modern, responsive website for Scolastica Secondary School in Kilimanjaro, Tanzania.
                         </p>
                         <div class="w-fit">
-                            <a href="">
+                            <a href="https://scolasticaschool.sc.tz/" target="_blank">
                                 <button
-                                    class="py-2 px-4 bg-gradient-to-r from-blue-950 to-blue-900 hover:bg-blue-900 rounded-full font-semibold transition-colors duration-1000 text-white flex items-center space-x-3"
-                                    target="_blank">
+                                    class="py-2 px-4 bg-gradient-to-r from-blue-950 to-blue-900 hover:bg-blue-900 rounded-full font-semibold transition-colors duration-1000 text-white flex items-center space-x-3">
                                     <span>view project</span> <i class="fa fa-arrow-right"></i>
                                 </button>
                             </a>
@@ -188,18 +186,17 @@
                     class="p-6 bg-gradient-to-br from-orange-200 to-orange-50 rounded-2xl hover:shadow-md shadow-blue-200 border-2 hover:border-orange-400 transition transform ease-in-out duration-500">
                     <div class="flex flex-col gap-2">
                         <div class="w-full h-52 overflow-hidden">
-                            <img src="{{ asset('images/KANYASI_66.jpg') }}" alt="design mockup"
+                            <img src="{{ asset('images/ghrtcc-project.PNG') }}" alt="design mockup"
                                 class="w-full h-full object-cover">
                         </div>
-                        <h2 class="text-lg tracking-wide text-blue-900 font-semibold">School Website</h2>
-                        <p class="text-gray-600 text-justify">Designing, developing, and deploying custom web-based
-                            software to automate business processes, manage data, and facilitate online transactions.
+                        <h2 class="text-lg tracking-wide text-blue-900 font-semibold">Organization Website</h2>
+                        <p class="text-gray-600 text-justify">A clean and professional website for an organization specializing in training, research, and consultancy services.
                         </p>
                         <div class="w-fit">
-                            <a href="">
+                            <a href="https://giftedhandsrtcc.or.tz/" target="_blank">
                                 <button
                                     class="py-2 px-4 bg-blue-950 hover:bg-blue-900 rounded-full font-semibold transition-colors duration-1000 text-white flex items-center space-x-3"
-                                    target="_blank">
+                                    >
                                     <span>view project</span> <i class="fa fa-arrow-right"></i>
                                 </button>
                             </a>
@@ -266,7 +263,7 @@
     <section class="py-8 md:py-16 bg-white">
         <div class="w-11/12 md:w-10/12 mx-auto flex flex-col gap-4">
             <div class="w-11/12 md:w-8/12 mx-auto text-center my-2">
-                <h2 class="text-blue-900 font-semibold mb-2 uppercase tracking-wide">tools</h2>
+                <h2 class="text-orange-600 font-semibold mb-2 uppercase tracking-wide">tools</h2>
                 <p class="text-xl md:text-3xl font-bold text-gray-800">Technologies We Work With</p>
             </div>
 
@@ -321,16 +318,7 @@
                 <div class="w-1/2 md:w-1/4 lg:w-1/5 my-4">
                     <div
                         class="w-11/12 mx-auto bg-white text-gray-600 flex flex-col items-center space-y-2 p-4 rounded-lg shadow-sm hover:shadow-md hover:scale-105 transition duration-300 ease-in-out">
-                        <i class="fab fa-bootstrap text-5xl text-indigo-600"></i>
-                        <h2 class="text-lg font-semibold tracking-wide">Bootstrap</h2>
-                        <p class="text-base">Web Development</p>
-                    </div>
-                </div>
-
-                <div class="w-1/2 md:w-1/4 lg:w-1/5 my-4">
-                    <div
-                        class="w-11/12 mx-auto bg-white text-gray-600 flex flex-col items-center space-y-2 p-4 rounded-lg shadow-sm hover:shadow-md hover:scale-105 transition duration-300 ease-in-out">
-                        <img src="{{ asset('images/mongo.png') }}" alt="MongoDB" class="w-14 h-14">
+                        <img src="{{ asset('images/mongodb-4.webp') }}" alt="MongoDB" class="w-14 h-14">
                         <h2 class="text-lg font-semibold tracking-wide">MongoDB</h2>
                         <p class="text-base">Web Development</p>
                     </div>
@@ -349,9 +337,17 @@
                 <div class="w-1/2 md:w-1/4 lg:w-1/5 my-4">
                     <div
                         class="w-11/12 mx-auto bg-white text-gray-600 flex flex-col items-center space-y-2 p-4 rounded-lg shadow-sm hover:shadow-md hover:scale-105 transition duration-300 ease-in-out">
-                        <img src="https://www.vectorlogo.zone/logos/adobe/adobe-icon.svg" alt="Adobe"
-                            class="w-14 h-14">
-                        <h2 class="text-lg font-semibold tracking-wide">Adobe</h2>
+                         <img src={{asset('images/photoshop.png')}} alt="Adobe"
+                                        class="w-14 h-14">
+                        <h2 class="text-lg font-semibold tracking-wide">Photoshop</h2>
+                        <p class="text-base">Graphic Design</p>
+                    </div>
+                </div>
+                <div class="w-1/2 md:w-1/4 lg:w-1/5 my-4">
+                    <div
+                        class="w-11/12 mx-auto bg-white text-gray-600 flex flex-col items-center space-y-2 p-4 rounded-lg shadow-sm hover:shadow-md hover:scale-105 transition duration-300 ease-in-out">
+                        <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="Adobe Photoshop" class="w-14 h-14" />
+                        <h2 class="text-lg font-semibold tracking-wide">Adobe Illustrator</h2>
                         <p class="text-base">Graphic Design</p>
                     </div>
                 </div>

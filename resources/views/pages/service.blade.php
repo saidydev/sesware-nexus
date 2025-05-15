@@ -76,14 +76,8 @@
                         </div>
                         <div class="w-1/2 md:w-1/4 my-2">
                             <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
-                                <i class="fab fa-bootstrap text-xl"></i>
-                                <h2 class="tracking-wide font-semibold">Bootstrap</h2>
-                            </div>
-                        </div>
-                        <div class="w-1/2 md:w-1/4 my-2">
-                            <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
-                                <div class="w-10 h-10 rounded-full bg-[#47A248] shadow-lg flex justify-center items-center">
-                                    <i class="fas fa-leaf text-white text-xl"></i>
+                                <div class="w-10 h-10 rounded-full bg-white shadow-lg flex justify-center items-center">
+                                    <img src="{{ asset('images/mongodb-4.webp') }}" alt="" class="w-8 h-8">
                                 </div>
                                 <h2 class="tracking-wide font-semibold">MongoDB</h2>
                             </div>
@@ -102,19 +96,19 @@
                     <div class="w-full m-4 py-4">
                         <div class="flex items-center flex-wrap gap-3">
                             <span
-                                class="rounded-full py-1.5 px-4 bg-orange-700 text-white font-medium shadow hover:bg-orange-800 transition-colors duration-300">
+                                class="rounded-full py-1.5 px-4 border border-blue-100 text-white font-medium shadow">
                                 User-friendly interfaces
                             </span>
                             <span
-                                class="rounded-full py-1.5 px-4 bg-orange-700 text-white font-medium shadow hover:bg-orange-800 transition-colors duration-300">
+                                class="rounded-full py-1.5 px-4 border border-blue-100 text-white font-medium shadow">
                                 Database integration
                             </span>
                             <span
-                                class="rounded-full py-1.5 px-4 bg-orange-700 text-white font-medium shadow hover:bg-orange-800 transition-colors duration-300">
+                                class="rounded-full py-1.5 px-4 border border-blue-100 text-white font-medium shadow">
                                 API development
                             </span>
                             <span
-                                class="rounded-full py-1.5 px-4 bg-orange-700 text-white font-medium shadow hover:bg-orange-800 transition-colors duration-300">
+                                class="rounded-full py-1.5 px-4 border border-blue-100 text-white font-medium shadow">
                                 Responsive design
                             </span>
                         </div>
@@ -144,28 +138,35 @@
                     <div class="w-full flex flex-wrap justify-center items-center">
                         <div class="w-1/2 md:w-1/4 my-2">
                             <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
-                                <img src="https://www.vectorlogo.zone/logos/adobe/adobe-icon.svg" class="w-8 h-8"
-                                    alt="Adobe" />
+                                 <div class="w-10 h-10 rounded-full bg-[#20232a] shadow-lg flex justify-center items-center">
+                                    <i class="fab fa-react text-[#61dafb] text-2xl animate-spin-slow"></i>
+                                </div>
                                 <h2 class="tracking-wide font-semibold">React Native</h2>
                             </div>
                         </div>
                         <div class="w-1/2 md:w-1/4 my-2">
                             <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
-                                <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
-                                    class="w-8 h-8" alt="Tailwind CSS" />
+                                 <div class="w-10 h-10 rounded-full bg-white shadow-lg flex justify-center items-center">
+                                    <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+                                        alt="Tailwind CSS" class="w-6 h-6">
+                                </div>
                                 <h2 class="tracking-wide font-semibold">Tailwind</h2>
                             </div>
                         </div>
                         <div class="w-1/2 md:w-1/4 my-2">
                             <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
-                                <img src="{{ asset('images/mongodb-4.webp') }}" alt="" class="w-8 h-8">
+                                 <div class="w-10 h-10 rounded-full bg-white shadow-lg flex justify-center items-center">
+                                    <img src="{{ asset('images/mongodb-4.webp') }}" alt="" class="w-8 h-8">
+                                </div>
                                 <h2 class="tracking-wide font-semibold">MongoDB</h2>
                             </div>
                         </div>
                         <div class="w-1/2 md:w-1/4 my-2">
                             <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
-                                <img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" alt="MySQL"
-                                    class="w-8 h-8">
+                                 <div class="w-10 h-10 rounded-full bg-white shadow-lg flex justify-center items-center">
+                                    <img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" alt="MySQL"
+                                        class="w-6 h-6">
+                                </div>
                                 <h2 class="tracking-wide font-semibold">mySQL</h2>
                             </div>
                         </div>
@@ -174,19 +175,19 @@
                     <div class="w-full m-4 py-4">
                         <div class="text-blue-100 flex items-center flex-wrap gap-2">
                             <span
-                                class="rounded-full py-1.5 px-4 bg-orange-700 text-white font-medium shadow hover:bg-orange-800 transition-colors duration-300">
+                                class="rounded-full py-1.5 px-4 text-white font-medium shadow border border-blue-100">
                                 Cross-platform Development
                             </span>
                             <span
-                                class="rounded-full py-1.5 px-4 bg-orange-700 text-white font-medium shadow hover:bg-orange-800 transition-colors duration-300">
+                                class="rounded-full py-1.5 px-4 text-white font-medium shadow border border-blue-100">
                                 User-friendly interfaces
                             </span>
                             <span
-                                class="rounded-full py-1.5 px-4 bg-orange-700 text-white font-medium shadow hover:bg-orange-800 transition-colors duration-300">
+                                class="rounded-full py-1.5 px-4 text-white font-medium shadow border border-blue-100">
                                 Push notifications
                             </span>
                             <span
-                                class="rounded-full py-1.5 px-4 bg-orange-700 text-white font-medium shadow hover:bg-orange-800 transition-colors duration-300">
+                                class="rounded-full py-1.5 px-4 text-white font-medium shadow border border-blue-100">
                                 Integration with device features
                             </span>
                         </div>
@@ -227,12 +228,21 @@
                         <div class="w-1/2 md:w-1/4 my-2">
                             <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
                                 <div
-                                    class="w-10 h-10 rounded-full bg-[#FF0000] shadow-lg flex justify-center items-center">
-                                    <img src="https://www.vectorlogo.zone/logos/adobe/adobe-icon.svg" alt="Adobe"
-                                        class="w-6 h-6">
+                                    class="w-10 h-10 rounded-full shadow-lg bg-white flex justify-center items-center">
+                                    <img src={{asset('images/photoshop.png')}} alt="Adobe"
+                                        class="w-8 h-8">
                                 </div>
+                                <h2 class="tracking-wide font-semibold">Photoshop</h2>
+                            </div>
+                        </div>
+                        <div class="w-1/2 md:w-1/4 my-2">
+                            <div class="mx-auto text-blue-100 flex flex-col items-center rounded-md">
+                                <div
+                                    class="w-10 h-10 rounded-full shadow-lg bg-white flex justify-center items-center">
+                                    <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="Adobe Photoshop" class="w-6 h-6" />
 
-                                <h2 class="tracking-wide font-semibold">Adobe</h2>
+                                </div>
+                                <h2 class="tracking-wide font-semibold">Illustrator</h2>
                             </div>
                         </div>
                     </div>

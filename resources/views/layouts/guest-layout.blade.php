@@ -25,7 +25,7 @@
         <div class="h-10 w-1/4  lg:h-16 lg:w-1/5 bg-contain bg-no-repeat"
             style="background-image: url('./images/logo.png')">
         </div>
-        <div class="lg:flex lg:space-x-4 lg:justify-between lg:w-fit text-font text-lg hidden text-white">
+        <div class="lg:flex lg:space-x-6 lg:justify-between lg:w-fit text-font text-lg hidden text-white">
             <a href="{{ route('home') }}">
                 <li>Home</li>
             </a>
@@ -83,12 +83,12 @@
                 <h3 class="text-white font-semibold text-xl">Connect With US</h3>
                 <div class="flex flex-col space-y-4 text-lg">
                     <a href="" class="hover:text-slate-400">
-                        <div class="w-full flex items-center space-x-4">
+                        <div class="w-full flex items-center">
                             <a href="#"
                                 class="w-10 h-10 flex items-center justify-center bg-blue-900 rounded-full border border-gray-100">
                                 <i class="fa fa-envelope text-white"></i>
                             </a>
-                            <span>info@seswarenexus.com</span>
+                            <span class="mx-4">info@seswarenexus.com</span>
                         </div>
                     </a>
                     <a href="" class="hover:text-slate-400">
